@@ -25,6 +25,8 @@
     .portfolio-grid img { width: 100%; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
     .contact { text-align: center; }
     footer { padding: 30px; text-align: center; background: white; margin-top: 60px; color: #777; }
+      .card h4 { display:flex; align-items:center; gap:8px; }
+    .premium { border:2px solid #0a4fff; }
   </style>
 </head>
 <body>
@@ -70,6 +72,50 @@
     <div class="card"><h4>Landing Page</h4><p>USD 40</p></div>
     <div class="card"><h4>Web Profesional</h4><p>USD 90</p></div>
     <div class="card"><h4>Tienda Online</h4><p>USD 150–200</p></div>
+  </div>
+</section>
+
+<section id="catalogo">
+  <h3>Catálogo de Precios Profesional</h3>
+  <div class="services-grid">
+    <div class="card">
+      <h4>PACK LANDING PAGE — $99.000 ARS</h4>
+      <p>Sitio de una sola sección ideal para captar clientes y promocionar servicios.</p>
+      <p><strong>Incluye:</strong><br>Diseño moderno, optimización de velocidad, contacto con WhatsApp y mail, llamados a la acción, 1 ronda de revisiones.</p>
+      <p><strong>Opcionales:</strong><br>Fotos premium (+$20.000)<br>Video hero (+$25.000)<br>Copys profesionales (+$15.000)</p>
+    </div>
+    <div class="card">
+      <h4>PACK WEB EMPRESARIAL — $160.000 ARS</h4>
+      <p>Para negocios que necesitan presencia profesional.</p>
+      <p><strong>Incluye:</strong><br>Home + Servicios + Sobre Nosotros + Contacto, WhatsApp, SEO básico, hasta 10 imágenes, 2 rondas de revisiones.</p>
+      <p><strong>Opcionales:</strong><br>Galería profesional (+$20.000)<br>Video institucional (+$35.000)<br>Branding básico (+$18.000)</p>
+    </div>
+    <div class="card">
+      <h4>PACK E‑COMMERCE — $290.000 ARS</h4>
+      <p>Tienda online completa y autoadministrable.</p>
+      <p><strong>Incluye:</strong><br>Diseño profesional, carga de 10 productos, MercadoPago, manual de uso, optimización de velocidad.</p>
+      <p><strong>Opcionales:</strong><br>Video demo (+$40.000)<br>Fotos profesionales (+$35.000)<br>SEO avanzado (+$50.000)</p>
+    </div>
+    <div class="card">
+      <h4>PACK WEB A MEDIDA — Desde $350.000 ARS</h4>
+      <p>Para proyectos complejos, sistemas o funcionalidades avanzadas.</p>
+      <p><strong>Incluye:</strong><br>Diseño personalizado, funciones exclusivas, reuniones de seguimiento, testing completo.</p>
+      <p><strong>Extras:</strong> a cotizar según necesidades.</p>
+    </div>
+  </div>
+
+  <h3 style="margin-top:60px">Imágenes y Videos Premium</h3>
+  <div class="services-grid">
+    <div class="card">
+      <h4>Imágenes Premium</h4>
+      <p>Stock en HD de alta calidad adaptado al rubro del cliente.</p>
+      <p><strong>Precio:</strong> +$20.000 – $40.000 ARS</p>
+    </div>
+    <div class="card">
+      <h4>Videos Premium</h4>
+      <p>Video hero corto (1–8 segundos) con edición y optimización.</p>
+      <p><strong>Precio:</strong> +$25.000 – $45.000 ARS</p>
+    </div>
   </div>
 </section>
 
