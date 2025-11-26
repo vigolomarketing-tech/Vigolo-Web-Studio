@@ -3,123 +3,85 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Creación de Páginas Web Profesionales</title>
+  <title>Vigolo Web Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #4f46e5;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    .cta {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .cta a {
-      background: #4f46e5;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f7faff; color: #222; }
+    header { width: 100%; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top:0; }
+    header h1 { font-size: 22px; font-weight: 700; color: #0a4fff; }
+    header nav a { margin-left: 20px; color: #333; text-decoration: none; font-weight: 500; }
+    .hero { padding: 100px 40px; text-align: center; }
+    .hero h2 { font-size: 48px; font-weight: 700; color: #0a4fff; max-width: 800px; margin: 0 auto; }
+    .hero p { margin-top: 20px; font-size: 20px; color: #555; }
+    .cta { margin-top: 30px; display: inline-block; padding: 14px 28px; background: #0a4fff; color: white; border-radius: 10px; text-decoration: none; font-weight: 600; }
+    section { padding: 80px 40px; max-width: 1100px; margin: auto; }
+    h3 { font-size: 32px; margin-bottom: 20px; color: #0a4fff; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+    .card { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .card h4 { font-size: 22px; margin-bottom: 10px; color: #0a4fff; }
+    .portfolio-grid img { width: 100%; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+    .contact { text-align: center; }
+    footer { padding: 30px; text-align: center; background: white; margin-top: 60px; color: #777; }
   </style>
 </head>
 <body>
-  <header>
-    <div style="display:flex;align-items:center;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <img src="#" alt="Vigolo Web Studio - logo" width="64" height="64" style="border-radius:8px;background:#fff;padding:6px;box-shadow:0 3px 10px rgba(0,0,0,0.08);" />
-      <div>
-        <h1 style="margin:0;font-size:2.2rem;">Vigolo Web Studio</h1>
-        <p style="margin:6px 0 0;opacity:0.95;">Diseño y desarrollo web profesional — páginas rápidas, seguras y listas para vender</p>
-      </div>
-    </div>
-  </header>
 
-  <div class="container">
-    <h2>Servicios</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Landing Page</h3>
-        <p>Perfecta para promocionar tu negocio o producto con estilo.</p>
-      </div>
-      <div class="card">
-        <h3>E‑commerce</h3>
-        <p>Vende tus productos online con una tienda moderna y segura.</p>
-      </div>
-      <div class="card">
-        <h3>Web a Medida</h3>
-        <p>Diseñamos exactamente lo que necesitas, sin límites.</p>
-      </div>
-    </div>
+<header>
+  <h1>Vigolo Web Studio</h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#precios">Precios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-    <div class="cta">
-      <a href="#contacto">Quiero mi página web</a>
-    </div>
-  </div>
-  
-  <div class="container">
-    <h2>Precios y paquetes</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Landing Page</h3>
-        <p>Perfecta para captar clientes y promocionar tu servicio.</p>
-        <p><strong>Precio:</strong> $99.000 ARS</p>
-        <p><em>Opcionales:</em> Fotos premium +$20.000, Video hero +$25.000.</p>
-      </div>
-      <div class="card">
-        <h3>Web Empresarial (2–4 páginas)</h3>
-        <p>Presencia profesional con secciones clave y SEO básico.</p>
-        <p><strong>Precio:</strong> $160.000 ARS</p>
-        <p><em>Opcionales:</em> Galería +$20.000, Video institucional +$35.000.</p>
-      </div>
-      <div class="card">
-        <h3>E-commerce</h3>
-        <p>Tienda online autoadministrable (integración de pagos).</p>
-        <p><strong>Precio:</strong> $290.000 ARS</p>
-        <p><em>Opcionales:</em> Fotos +$35.000, SEO avanzado +$50.000.</p>
-      </div>
-    </div>
-  </div>
+<div class="hero">
+  <h2>Diseño y desarrollo de páginas web modernas que convierten clientes</h2>
+  <p>Impulso tu marca con sitios rápidos, profesionales y optimizados para aumentar tus ventas.</p>
+  <a class="cta" href="https://wa.me/">Quiero mi página web</a>
+</div>
 
-  <div id="contacto" class="container">
-    <h2>Contacto</h2>
-    <p>📱 WhatsApp: <a href="https://wa.me/541128074105">1128074105</a></p>
-    <p>📧 Email: <a href="mailto:vigolomarketing@gmail.com">vigolomarketing@gmail.com</a></p>
+<section id="servicios">
+  <h3>Servicios</h3>
+  <div class="services-grid">
+    <div class="card"><h4>Página Web Profesional</h4><p>Diseño moderno, responsive, rápido y optimizado para SEO.</p></div>
+    <div class="card"><h4>Landing Page</h4><p>Ideal para vender un servicio o producto con foco en conversiones.</p></div>
+    <div class="card"><h4>Tienda Online</h4><p>E‑commerce completo con pagos, envíos y catálogo.</p></div>
+    <div class="card"><h4>Rediseño Web</h4><p>Llevo tu web actual a nivel profesional.</p></div>
   </div>
-  <a href="https://wa.me/541128074105" aria-label="WhatsApp" style="position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:14px;border-radius:50px;box-shadow:0 6px 18px rgba(0,0,0,0.15);text-decoration:none;font-weight:600;">WhatsApp</a>
+</section>
+
+<section id="portfolio">
+  <h3>Portfolio</h3>
+  <div class="portfolio-grid services-grid">
+    <img src="https://via.placeholder.com/600x400?text=Proyecto+1" />
+    <img src="https://via.placeholder.com/600x400?text=Proyecto+2" />
+    <img src="https://via.placeholder.com/600x400?text=Proyecto+3" />
+  </div>
+</section>
+
+<section id="precios">
+  <h3>Precios</h3>
+  <div class="services-grid">
+    <div class="card"><h4>Landing Page</h4><p>USD 40</p></div>
+    <div class="card"><h4>Web Profesional</h4><p>USD 90</p></div>
+    <div class="card"><h4>Tienda Online</h4><p>USD 150–200</p></div>
+  </div>
+</section>
+
+<section id="contacto" class="contact">
+  <h3>Contacto</h3>
+  <p>¿Listo para tener tu web profesional?</p>
+  <a class="cta" href="https://wa.me/">Escribime por WhatsApp</a>
+</section>
+
+<footer>
+  Vigolo Web Studio © 2025 — Todos los derechos reservados
+</footer>
+
 </body>
 </html>
