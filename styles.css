@@ -1,234 +1,79 @@
-/* FUENTES Y RESETEO */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
 }
 
 body {
-    background: #0A0A0A;
-    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: #111;   /* Fondo oscuro general */
+    color: #fff;
     line-height: 1.6;
 }
 
-/* =============================== */
-/*            HERO / HEADER        */
-/* =============================== */
-header {
-    height: 85vh;
+/* HERO / IMAGEN DE PORTADA */
+.hero {
     width: 100%;
-    background: url("hero.jpg.png") no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
+    height: 25vh;                 /* Banda pro */
+    background-image: url("hero.jpg.png");   /* Asegurate que este archivo exista */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ENCABEZADOS */
+header {
+    background-color: #222;
+    padding: 15px 0;
     text-align: center;
-    position: relative;
-}
-
-/* Sombra oscura encima de la imagen */
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-}
-
-header h1,
-header p,
-header .cta {
-    position: relative;
-    z-index: 2;
 }
 
 header h1 {
-    font-size: 3.2rem;
-    font-weight: 800;
-    color: #ffffff;
-    margin-bottom: 15px;
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
 }
 
-header p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin-bottom: 25px;
-    opacity: 0.9;
-}
-
-/* BOTÓN PRINCIPAL */
-.cta {
-    background: #00ff75;
-    color: #000;
-    padding: 14px 28px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: 0.25s;
-    display: inline-block;
-}
-
-.cta:hover {
-    background: #00d969;
-    transform: scale(1.05);
-}
-
-/* =============================== */
-/*          SECCIÓN INCLUYE        */
-/* =============================== */
-.incluye {
-    padding: 80px 20px;
+/* CONTENIDO CENTRAL */
+.content {
+    padding: 20px;
     text-align: center;
 }
 
-.incluye h2 {
-    font-size: 2.3rem;
-    margin-bottom: 40px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
+/* PRECIO / CAJAS */
 .card {
-    background: #111;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #1f1f1f;
-    transition: 0.25s;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #333;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #00ff75;
+/* BOTÓN WHATSAPP */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.card h3 {
-    margin-bottom: 10px;
-    color: #00ff75;
+.whatsapp-btn:hover {
+    background-color: #1ebe5a;
 }
 
-/* =============================== */
-/*            PRECIOS              */
-/* =============================== */
-.precios {
-    padding: 90px 20px;
-    text-align: center;
-    background: #0d0d0d;
-}
-
-.precios h2 {
-    font-size: 2.3rem;
-    margin-bottom: 40px;
-}
-
-.tabla-precios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.precio-card {
-    background: #111;
-    padding: 30px;
-    border-radius: 14px;
-    border: 1px solid #222;
-    transition: 0.25s;
-}
-
-.precio-card:hover {
-    transform: translateY(-8px);
-    border-color: #00ff75;
-}
-
-.precio-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-}
-
-.precio-card .monto {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: #00ff75;
-}
-
-.precio-card ul {
-    list-style: none;
-    text-align: left;
-}
-
-.precio-card ul li {
-    margin: 8px 0;
-    opacity: 0.9;
-}
-
-/* Card destacada */
-.destacado {
-    background: #1b1b1b;
-    border-color: #00ff75;
-}
-
-/* =============================== */
-/*      CALL TO ACTION FINAL       */
-/* =============================== */
-.cta-final {
-    text-align: center;
-    padding: 90px 20px;
-    background: #000;
-}
-
-.cta-final h2 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-}
-
-.cta-final p {
-    margin-bottom: 25px;
-    opacity: 0.85;
-}
-
-.cta.grande {
-    padding: 16px 40px;
-    font-size: 1.2rem;
-}
-
-/* =============================== */
-/*            FOOTER               */
-/* =============================== */
+/* FOOTER */
 footer {
+    margin-top: 30px;
     text-align: center;
-    padding: 35px 0;
-    background: #0b0b0b;
-    margin-top: 40px;
-    border-top: 1px solid #111;
-}
-
-footer p {
-    opacity: 0.7;
-    font-size: 0.95rem;
-}
-
-/* =============================== */
-/*         RESPONSIVE FIX          */
-/* =============================== */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.4rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .cta {
-        padding: 12px 22px;
-    }
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
 }
