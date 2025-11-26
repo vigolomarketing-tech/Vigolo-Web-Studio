@@ -16,13 +16,7 @@
     }
 
     header {
-      background: none;
-      height: auto;
-      padding: 80px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding: 60px 20px 40px;
       text-align: center;
     }
 
@@ -35,8 +29,17 @@
     header p {
       font-size: 1.2rem;
       max-width: 600px;
-      margin-top: 15px;
+      margin: 15px auto 30px;
       font-weight: 300;
+    }
+
+    .hero-img {
+      width: 90%;
+      max-width: 900px;
+      height: auto;
+      border-radius: 15px;
+      margin: 20px auto;
+      display: block;
     }
 
     .btn-principal {
@@ -48,30 +51,40 @@
       font-weight: 700;
       text-decoration: none;
       font-size: 1.1rem;
+      display: inline-block;
     }
 
     section {
       padding: 60px 20px;
-      max-width: 1100px;
+      max-width: 900px;
       margin: auto;
     }
 
-    h2 {
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 25px;
       text-align: center;
-      font-size: 2.3rem;
-      margin-bottom: 40px;
     }
 
     .info-box, .price-box {
       background: #1a1a1a;
       border-radius: 15px;
       padding: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
-    .price-box h3 {
-      margin-top: 0;
-      font-size: 1.6rem;
+    .price-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #25d366;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 15px;
     }
 
     footer {
@@ -85,105 +98,140 @@
 <body>
 
 <header>
-  <img src="logo.png" alt="Vigolo Web Studio Logo" style="width:140px; margin-bottom:20px;">
   <h1>Vigolo Web Studio</h1>
-  <p>Diseño web moderno, rápido y optimizado para convertir visitas en clientes.</p>
-  <img src="hero.jpg.png" alt="Hero" style="margin-top:25px; width:90%; max-width:700px; border-radius:15px;">
-  <img src="hero.jpg.png" alt="Hero" style="margin-top:25px; width:90%; max-width:700px; border-radius:15px;">
-  <img src="hero.jpg" alt="Hero" style="width:100%; max-width:900px; border-radius:18px; margin-top:25px;">
+  <p>Diseño web moderno, rápido y optimizado para convertir visitas en clientes. Impulsá tu presencia digital con un sitio profesional.</p>
+
+  <img src="hero.jpg.png" alt="Imagen de presentación" class="hero-img">
+
+  <a href="https://wa.me/541128074105" class="btn-principal">Escribirme al WhatsApp</a>
 </header>
 
-<section id="servicios">
+<section>
   <h2>¿Qué incluye tu página web?</h2>
 
   <div class="info-box">
     <h3>✔ Diseño profesional y responsive</h3>
-    <p>Adaptada a todos los dispositivos con estética premium.</p>
+    <p>Tu web se adapta a celulares, tablets y computadoras con una estética limpia y moderna.</p>
   </div>
 
   <div class="info-box">
-    <h3>✔ SEO básico</h3>
-    <p>Optimización para aparecer mejor en Google.</p>
+    <h3>✔ Optimización SEO</h3>
+    <p>Posicionamiento para aparecer mejor en búsquedas y atraer clientes orgánicos.</p>
   </div>
 
   <div class="info-box">
-    <h3>✔ Integraciones</h3>
-    <p>WhatsApp, redes, formularios, analytics, llamadas a la acción.</p>
+    <h3>✔ Integración completa</h3>
+    <p>Botones, redes sociales, formularios, analytics y todo lo necesario para escalar tu negocio.</p>
   </div>
 
   <div class="info-box">
     <h3>✔ Hosting + Dominio + Soporte</h3>
-    <p>Ya listo para funcionar desde el día uno.</p>
+    <p>Todo listo para que empieces a operar desde el primer día sin preocuparte por lo técnico.</p>
   </div>
 </section>
 
-<section id="precios">
-  <h2>Catálogo de Precios</h2>
+<!-- NUEVA SECCIÓN DE PRECIOS -->
+<section>
+  <h2>Catálogo de Servicios Web — Versión Premium</h2>
 
+  <!-- PACK 1 -->
   <div class="price-box">
-    <h3>⚡ Landing Page — $99.000 ARS</h3>
-    <p>Ideal para captar clientes rápido.</p>
+    <div class="price-title">⚡ PACK LANDING PAGE</div>
+    <div class="price">$99.000 ARS</div>
+    <p>Sitio de una sola sección ideal para captar clientes y promocionar servicios.</p>
+    <p><strong>Incluye:</strong></p>
     <ul>
-      <li>Diseño moderno</li>
-      <li>Velocidad optimizada</li>
-      <li>Contacto + WhatsApp</li>
+      <li>Diseño moderno y responsive</li>
+      <li>Optimización de velocidad</li>
+      <li>Contacto con WhatsApp y mail</li>
+      <li>Llamados a la acción</li>
       <li>1 ronda de revisiones</li>
     </ul>
-    <strong>Opcionales:</strong>
+    <p><strong>Opcionales:</strong></p>
     <ul>
-      <li>Fotos premium: +$20.000</li>
-      <li>Video hero: +$25.000</li>
-      <li>Copys: +$15.000</li>
+      <li>Fotos premium → +$20.000</li>
+      <li>Video hero corto → +$25.000</li>
+      <li>Copys profesionales → +$15.000</li>
     </ul>
   </div>
 
+  <!-- PACK 2 -->
   <div class="price-box">
-    <h3>🛒 Web Empresarial (2–4 páginas) — $160.000 ARS</h3>
+    <div class="price-title">🛒 PACK WEB EMPRESARIAL (2–4 páginas)</div>
+    <div class="price">$160.000 ARS</div>
+    <p>Para negocios que necesitan presencia profesional y más contenido.</p>
+    <p><strong>Incluye:</strong></p>
     <ul>
-      <li>Home + Servicios + Sobre mí + Contacto</li>
+      <li>Home + Servicios + Sobre Nosotros + Contacto</li>
       <li>WhatsApp integrado</li>
       <li>SEO básico</li>
-      <li>Hasta 10 imágenes</li>
+      <li>Carga de 10 imágenes</li>
+      <li>2 rondas de revisiones</li>
     </ul>
-    <strong>Opcionales:</strong>
+    <p><strong>Opcionales:</strong></p>
     <ul>
-      <li>Galería profesional: +$20.000</li>
-      <li>Video institucional: +$35.000</li>
-      <li>Branding básico: +$18.000</li>
+      <li>Galería profesional → +$20.000</li>
+      <li>Video institucional → +$35.000</li>
+      <li>Branding básico → +$18.000</li>
     </ul>
   </div>
 
+  <!-- PACK 3 -->
   <div class="price-box">
-    <h3>🏪 E‑commerce — $290.000 ARS</h3>
+    <div class="price-title">🏪 PACK E-COMMERCE</div>
+    <div class="price">$290.000 ARS</div>
+    <p>Tienda online completa, lista para vender y autoadministrable.</p>
+    <p><strong>Incluye:</strong></p>
     <ul>
-      <li>Tienda completa</li>
-      <li>10 productos cargados</li>
-      <li>MercadoPago</li>
+      <li>Diseño profesional</li>
+      <li>Carga de 10 productos</li>
+      <li>Integración con MercadoPago</li>
       <li>Manual de uso</li>
+      <li>Optimización de velocidad</li>
     </ul>
-    <strong>Opcionales:</strong>
+    <p><strong>Opcionales:</strong></p>
     <ul>
-      <li>Video demo: +$40.000</li>
-      <li>Fotos profesionales: +$35.000</li>
-      <li>SEO avanzado: +$50.000</li>
+      <li>Video demo → +$40.000</li>
+      <li>Fotos profesionales → +$35.000</li>
+      <li>SEO avanzado → +$50.000</li>
     </ul>
   </div>
 
+  <!-- PACK 4 -->
   <div class="price-box">
-    <h3>💼 Web a Medida — Desde $350.000 ARS</h3>
-    <p>Para sistemas, membresías y funcionalidades especiales.</p>
+    <div class="price-title">💼 PACK WEB A MEDIDA</div>
+    <div class="price">Desde $350.000 ARS</div>
+    <p>Para proyectos complejos o funcionalidades especiales.</p>
+    <p><strong>Incluye:</strong></p>
+    <ul>
+      <li>Diseño 100% personalizado</li>
+      <li>Funciones exclusivas</li>
+      <li>Reuniones de seguimiento</li>
+      <li>Testing completo</li>
+    </ul>
+    <p><strong>Extras:</strong> A cotizar según requerimientos.</p>
   </div>
-</section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <div style="text-align:center;">
-    <a href="https://wa.me/541128074105" class="btn-principal">Escribirme al WhatsApp</a>
+  <!-- EXTRAS -->
+  <h2>Extras Premium</h2>
+
+  <div class="info-box">
+    <h3>📸 Imágenes Premium</h3>
+    <p>Stock HD legal y de alta calidad, elegido según el rubro del cliente.</p>
+    <p><strong>→ + $20.000 – $40.000 ARS</strong></p>
   </div>
+
+  <div class="info-box">
+    <h3>🎥 Videos Premium</h3>
+    <p>Video hero corto (1–8 segundos), edición profesional y optimización.</p>
+    <p><strong>→ + $25.000 – $45.000 ARS</strong></p>
+  </div>
+
+  <a href="https://wa.me/541128074105" class="btn-principal">Quiero empezar mi proyecto</a>
 </section>
 
 <footer>
-  © 2025 – Vigolo Web Studio
+  © 2025 – Vigolo Web Studio. Todos los derechos reservados.
 </footer>
 
 </body>
