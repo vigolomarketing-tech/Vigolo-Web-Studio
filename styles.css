@@ -1,117 +1,83 @@
-/* Reset básico */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html,body { height: 100%; }
-
-/* Tipografías (si no tenés Poppins, se usa sistema) */
-body {
-  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background-color: #0b0b0b; /* fondo oscuro estable */
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
+/* RESETEO BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* ===== HERO: USANDO EXACTAMENTE hero.jpg.png ===== */
+body {
+  background: #f4f7fa;
+  color: #222;
+}
+
+/* ============================ */
+/*    RECTÁNGULO AZUL HERO      */
+/* ============================ */
 .site-hero {
   width: 100%;
-  height: 32vh; /* opción B: equilibrada */
-  min-height: 180px;
-  max-height: 360px;
-  background-image: url("hero.jpg.png"); /* archivo que tenés */
-  background-size: cover;
-  background-position: center center; /* mostrará el centro de la imagen */
-  background-repeat: no-repeat;
-  position: relative;
+  height: 240px;
+  background-color: #0a74da; /* azul */
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  align-items: center;
 }
 
-/* capa oscura para legibilidad */
-.site-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(3,33,68,0.62); /* azul oscuro translúcido (mejora contraste) */
-  z-index: 1;
+.hero-logo {
+  max-width: 260px;
+  height: auto;
+}
+
+/* ============================ */
+/*    INFO DEBAJO DEL HERO     */
+/* ============================ */
+.hero-info {
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .hero-inner {
-  z-index: 2;
-  text-align: center;
-  max-width: 900px;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
-.hero-inner h1 {
-  font-size: clamp(1.6rem, 3.0vw, 2.6rem);
-  line-height: 1.05;
-  color: #fff;
-  margin-bottom: 8px;
-  font-weight: 700;
+.hero-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.hero-inner p {
-  color: #e6eef8;
-  font-weight: 300;
-  margin-bottom: 14px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-info p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
-/* Botón WhatsApp */
-.btn-whatsapp {
+.hero-info ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.hero-info ul li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* ============================ */
+/*    BOTÓN DE WHATSAPP        */
+/* ============================ */
+.whatsapp-btn {
   display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
   background: #25d366;
-  color: #000;
-  padding: 12px 22px;
-  border-radius: 10px;
-  font-weight: 700;
+  color: white;
   text-decoration: none;
-  transition: transform .12s ease, box-shadow .12s ease;
-}
-.btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
-
-/* ===== Contenido general ===== */
-main { padding: 36px 20px 60px; max-width: 980px; margin: 0 auto; }
-
-.content h2, .prices h2 { text-align: center; font-size: 1.9rem; margin-bottom: 22px; color: #fff; }
-
-/* Info boxes */
-.info-box {
-  background: #121212;
-  padding: 18px;
-  border-radius: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #1e1e1e;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.2s ease;
 }
 
-/* Price cards */
-.prices { margin-top: 30px; }
-.price-box {
-  background: #121212;
-  padding: 18px;
-  border-radius: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #1e1e1e;
-}
-.price-box h3 { color: #25d366; margin-bottom: 8px; }
-.price-amount { font-weight: 700; margin-bottom: 10px; }
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 28px 10px;
-  color: #a9a9a9;
-  font-size: 0.95rem;
-  border-top: 1px solid #111;
-  margin-top: 40px;
-  background: transparent;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .site-hero { height: 28vh; }
-  .hero-inner h1 { font-size: 1.5rem; }
-  .hero-inner p { font-size: 0.95rem; }
+.whatsapp-btn:hover {
+  background: #1ebe5b;
 }
