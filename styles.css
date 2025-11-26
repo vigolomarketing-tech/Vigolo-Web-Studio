@@ -8,31 +8,35 @@ body {
 
 /* HERO SUPERIOR */
 .hero {
-    position: relative;
     width: 100%;
-    height: 25vh; /* <<< Banda horizontal estilo profesional */
+    height: 25vh; /* BANDA HORIZONTAL SUPER PROFESIONAL */
     overflow: hidden;
 }
 
 .hero-banner {
     width: 100%;
     height: 100%;
-    object-fit: cover;     /* Cubre bien sin deformarse */
-    object-position: center;
+    object-fit: cover;      /* Recorta sin deformar */
+    object-position: center; /* Centrado */
+    display: block;
 }
 
-/* CONTENIDO */
+/* CONTENIDO PRINCIPAL */
 .content {
-    padding: 40px 20px;
     text-align: center;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .content h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .content p {
-    font-size: 1.2rem;
-    opacity: 0.8;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
