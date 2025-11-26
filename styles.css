@@ -5,33 +5,54 @@ body {
   color: white;
 }
 
-header {
+/* HERO GENERAL */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+}
+
+.hero-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Overlay oscuro pro */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+/* Texto del hero */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 70px 20px 40px;
-  max-width: 900px;
-  margin: auto;
+  width: 90%;
+  max-width: 700px;
 }
 
-header h1 {
+.hero-content h1 {
   font-size: 3rem;
-  margin: 0;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
-header p {
+.hero-content p {
   font-size: 1.2rem;
   font-weight: 300;
-  max-width: 650px;
-  margin: 20px auto 35px;
-  line-height: 1.6;
-}
-
-.hero-img {
-  width: 92%;
-  max-width: 900px;
-  border-radius: 18px;
-  margin: 25px auto;
-  display: block;
+  margin-bottom: 25px;
 }
 
 .btn-principal {
@@ -39,8 +60,8 @@ header p {
   background: #25d366;
   padding: 15px 28px;
   color: black;
-  font-weight: 700;
   border-radius: 12px;
+  font-weight: 700;
   text-decoration: none;
   font-size: 1.1rem;
   display: inline-block;
@@ -53,10 +74,10 @@ section {
 }
 
 section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 35px;
+  font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .info-box, .price-box {
@@ -64,14 +85,13 @@ section h2 {
   border-radius: 15px;
   padding: 25px;
   margin-bottom: 25px;
-  line-height: 1.6;
 }
 
 .price-title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 10px;
   color: #25d366;
-  margin-bottom: 8px;
 }
 
 .price {
@@ -83,11 +103,6 @@ section h2 {
 footer {
   text-align: center;
   padding: 40px 0;
-  opacity: 0.6;
   font-size: 0.9rem;
-}
-
-ul {
-  margin-top: 5px;
-  margin-bottom: 10px;
+  opacity: 0.6;
 }
