@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vigolo Web Studio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vigolo Web Studio</title>
 
+  <!-- cache-busting para forzar CSS nuevo -->
+  <link rel="stylesheet" href="styles.css?v=20251126">
+</head>
 <body>
 
-    <!-- HERO SOLO CON LA IMAGEN -->
-    <header class="hero-header">
-        <img src="hero.jpg.png" alt="Vigolo Web Studio" class="hero-logo">
-    </header>
+  <!-- HEADER / HERO -->
+  <header class="site-hero" role="banner">
+    <div class="hero-inner">
+      <h1>Vigolo Web Studio</h1>
+      <p>Diseño web moderno, rápido y optimizado para convertir visitas en clientes. Potenciá tu presencia digital con un sitio profesional.</p>
+      <a class="btn-whatsapp" href="https://wa.me/541128074105">Escribirme al WhatsApp</a>
+    </div>
+  </header>
 
-    <!-- CONTENIDO DEBAJO DEL HERO -->
-    <section class="contenido">
-        <h1>Vigolo Web Studio</h1>
-        <p>Diseño y desarrollo de páginas web profesionales y modernas.</p>
+  <!-- SECCIÓN: ¿Qué incluye? -->
+  <main>
+    <section class="content">
+      <h2>¿Qué incluye tu página web?</h2>
 
-        <h2>Servicios</h2>
-        <ul>
-            <li>Landing pages</li>
-            <li>Páginas comerciales</li>
-            <li>Sitios institucionales</li>
-            <li>Optimización SEO</li>
-            <li>Integraciones con WhatsApp</li>
-        </ul>
+      <div class="info-box">
+        <h3>✔ Diseño profesional y responsive</h3>
+        <p>Tu web se adapta a celulares, tablets y computadoras con una estética limpia y moderna.</p>
+      </div>
 
-        <h2>Precios</h2>
-        <p><strong>Desde $25.000 ARS</strong> dependiendo del proyecto.</p>
+      <div class="info-box">
+        <h3>✔ Optimización SEO</h3>
+        <p>Posicionamiento para aparecer mejor en búsquedas y atraer clientes orgánicos.</p>
+      </div>
 
-        <!-- BOTÓN WHATSAPP -->
-        <a 
-            href="https://wa.me/5491138161711" 
-            class="btn-wsp" 
-            target="_blank">
-            Escribime por WhatsApp
-        </a>
+      <div class="info-box">
+        <h3>✔ Integración completa</h3>
+        <p>Botones, redes sociales, formularios, analytics y todo lo necesario para escalar tu negocio.</p>
+      </div>
+
+      <div class="info-box">
+        <h3>✔ Hosting + Dominio + Soporte</h3>
+        <p>Todo listo para que empieces a operar desde el primer día sin preocuparte por lo técnico.</p>
+      </div>
     </section>
+
+    <section class="prices">
+      <h2>Catálogo de Servicios Web — Versión Premium</h2>
+
+      <article class="price-box">
+        <h3>⚡ PACK LANDING PAGE</h3>
+        <div class="price-amount">$99.000 ARS</div>
+        <p>Sitio de una sola sección ideal para captar clientes y promocionar servicios.</p>
+      </article>
+
+      <article class="price-box">
+        <h3>🛒 PACK WEB EMPRESARIAL (2–4 páginas)</h3>
+        <div class="price-amount">$160.000 ARS</div>
+        <p>Para negocios que necesitan presencia profesional y más contenido.</p>
+      </article>
+
+      <article class="price-box">
+        <h3>🏪 PACK E-COMMERCE</h3>
+        <div class="price-amount">$290.000 ARS</div>
+        <p>Tienda online completa, lista para vender y autoadministrable.</p>
+      </article>
+
+      <article class="price-box">
+        <h3>💼 PACK WEB A MEDIDA</h3>
+        <div class="price-amount">Desde $350.000 ARS</div>
+        <p>Para proyectos complejos o funcionalidades especiales.</p>
+      </article>
+
+      <a class="btn-whatsapp" href="https://wa.me/541128074105">Quiero empezar mi proyecto</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 – Vigolo Web Studio. Todos los derechos reservados.
+  </footer>
 
 </body>
 </html>
