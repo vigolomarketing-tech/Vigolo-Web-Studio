@@ -1,216 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vigolo Web Studio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #0d0d0d;
-            color: white;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigolo Web Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
+      color: white;
+    }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #0d0d0d;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    header {
+      background: url('hero.jpg') center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-        header img {
-            height: 50px;
-        }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin: 0;
+    }
 
-        header a {
-            color: white;
-            margin-left: 25px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-top: 15px;
+      font-weight: 300;
+    }
 
-        .hero {
-            height: 90vh;
-            background: url("hero.jpg.png") no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
-        }
+    .btn-principal {
+      margin-top: 25px;
+      background: #25d366;
+      padding: 15px 28px;
+      color: black;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
 
-        .hero h1 {
-            font-size: 48px;
-            max-width: 900px;
-            line-height: 1.2;
-            text-shadow: 0px 0px 10px black;
-        }
+    section.info {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
 
-        .hero p {
-            font-size: 20px;
-            margin-top: 15px;
-            text-shadow: 0px 0px 10px black;
-        }
+    section.info h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
 
-        .btn-primary {
-            margin-top: 25px;
-            padding: 14px 26px;
-            background-color: #00c3ff;
-            color: black;
-            border: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+    .info-box {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
 
-        .btn-primary:hover {
-            background-color: #008bb8;
-        }
-
-        .section {
-            padding: 80px 40px;
-            text-align: center;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 40px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .service-card {
-            background-color: #1a1a1a;
-            padding: 30px;
-            border-radius: 12px;
-            transition: 0.2s;
-            border: 1px solid #333;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            border-color: #00c3ff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #999;
-        }
-
-        .contact-box {
-            background-color: #111;
-            padding: 30px;
-            max-width: 500px;
-            margin: auto;
-            border-radius: 12px;
-            border: 1px solid #333;
-        }
-
-        input, textarea {
-            width: 100%;
-            margin: 12px 0;
-            padding: 12px;
-            border-radius: 6px;
-            border: none;
-            background-color: #222;
-            color: white;
-            font-size: 16px;
-        }
-
-        textarea {
-            height: 140px;
-        }
-
-        .btn-form {
-            background-color: #00c3ff;
-            padding: 12px;
-            width: 100%;
-            font-weight: bold;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-form:hover {
-            background-color: #008bb8;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <img src="logo.png" alt="Vigolo Web Studio Logo" />
-        <nav>
-            <a href="#servicios">Servicios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+<header>
+  <h1>Vigolo Web Studio</h1>
+  <p>Diseño web moderno, rápido y optimizado para convertir visitas en clientes. Impulsá tu presencia digital con un sitio profesional.</p>
+  <a href="https://wa.me/541128074105" class="btn-principal">Escribirme al WhatsApp</a>
+</header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div>
-            <h1>Diseñamos páginas web profesionales para negocios que quieren crecer.</h1>
-            <p>Landing pages • Tiendas online • Branding • Automatizaciones</p>
-            <button class="btn-primary" onclick="location.href='#contacto'">Quiero mi web</button>
-        </div>
-    </section>
+<section class="info">
+  <h2>¿Qué incluye tu página web?</h2>
 
-    <!-- Servicios -->
-    <section id="servicios" class="section">
-        <h2>Servicios</h2>
-        <div class="services">
+  <div class="info-box">
+    <h3>✔ Diseño profesional y responsive</h3>
+    <p>Tu web se adapta a celulares, tablets y computadoras con una estética limpia y moderna.</p>
+  </div>
 
-            <div class="service-card">
-                <h3>Landing Pages</h3>
-                <p>Diseños modernos, rápidos y optimizados para convertir visitas en clientes.</p>
-            </div>
+  <div class="info-box">
+    <h3>✔ Optimización SEO</h3>
+    <p>Posicionamiento para aparecer mejor en búsquedas y atraer clientes orgánicos.</p>
+  </div>
 
-            <div class="service-card">
-                <h3>E-commerce</h3>
-                <p>Tiendas online completas con carrito, medios de pago y diseño premium.</p>
-            </div>
+  <div class="info-box">
+    <h3>✔ Integración completa</h3>
+    <p>Botones, redes sociales, formularios, analytics y todo lo necesario para escalar tu negocio.</p>
+  </div>
 
-            <div class="service-card">
-                <h3>Branding</h3>
-                <p>Logos, identidad visual y contenido profesional para tu marca.</p>
-            </div>
+  <div class="info-box">
+    <h3>✔ Hosting + Dominio + Soporte</h3>
+    <p>Todo listo para que empieces a operar desde el primer día sin preocuparte por lo técnico.</p>
+  </div>
 
-            <div class="service-card">
-                <h3>Automatizaciones</h3>
-                <p>Flujos automáticos, emails, bots y herramientas inteligentes.</p>
-            </div>
+  <a href="https://wa.me/541128074105" class="btn-principal">Quiero mi página web</a>
+</section>
 
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <div class="contact-box">
-            <form>
-                <input type="text" placeholder="Tu nombre" required />
-                <input type="email" placeholder="Tu email" required />
-                <textarea placeholder="Contame qué web querés crear" required></textarea>
-                <button class="btn-form">Enviar mensaje</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        © 2025 Vigolo Web Studio — Todos los derechos reservados.
-    </footer>
+<footer>
+  © 2025 – Vigolo Web Studio. Todos los derechos reservados.
+</footer>
 
 </body>
 </html>
