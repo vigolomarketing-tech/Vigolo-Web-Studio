@@ -1,90 +1,95 @@
-/* GENERAL */
+/* Reset general / estilos base */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #0d0d0d;
-    color: white;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: white;
 }
 
-/* HERO SUPERIOR */
+/* HERO superior — imagen como banner horizontal */
 .hero {
-    width: 100%;
-    height: 25vh; /* BANDA HORIZONTAL PROFESIONAL */
-    overflow: hidden;
+  width: 100%;
+  height: 25vh; /* Banda delgada al inicio */
+  overflow: hidden;
 }
 
 .hero-banner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
-/* CONTENIDO PRINCIPAL */
+/* Contenido principal centrado */
 .content {
-    text-align: center;
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .content h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .content p {
-    font-size: 1.15rem;
-    font-weight: 300;
-    line-height: 1.6;
-    opacity: 0.85;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
-/* BOTÓN */
+/* Botón principal */
 .btn {
-    display: inline-block;
-    margin-top: 25px;
-    background: #25d366;
-    padding: 14px 28px;
-    color: black;
-    border-radius: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 25px;
+  background: #25d366;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-/* SERVICIOS */
+/* Sección de servicios / tarjetas */
 .services {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 .services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .card {
-    background: #1a1a1a;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 25px;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
 }
 
 .card h3 {
-    margin: 0 0 10px;
-    font-size: 1.4rem;
-    color: #25d366;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #25d366;
 }
 
-/* FOOTER */
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 40px;
-    font-size: 0.9rem;
-    opacity: 0.6;
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+  font-size: 0.9rem;
 }
