@@ -9,15 +9,15 @@ body {
 /* HERO SUPERIOR */
 .hero {
     width: 100%;
-    height: 25vh; /* BANDA HORIZONTAL SUPER PROFESIONAL */
+    height: 25vh; /* BANDA HORIZONTAL PROFESIONAL */
     overflow: hidden;
 }
 
 .hero-banner {
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* Recorta sin deformar */
-    object-position: center; /* Centrado */
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -30,13 +30,61 @@ body {
 }
 
 .content h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .content p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 300;
     line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #25d366;
+    padding: 14px 28px;
+    color: black;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* SERVICIOS */
+.services {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    color: #25d366;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    opacity: 0.6;
 }
