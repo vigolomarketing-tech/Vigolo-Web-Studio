@@ -1,408 +1,534 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Vigolo Web Studio: webs que convierten visitas en clientes por WhatsApp. Especialistas en Estéticas, Barberías, Gimnasios. También trabajamos con cualquier rubro. Entrega en 5 a 7 días." />
-  <title>Vigolo Web Studio | Webs que traen clientes</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Elizard Deco | Diseño a medida</title>
+  <meta name="description" content="Elizard Deco: diseño y fabricación a medida en hierro y estructuras premium para hogares y comercios." />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-  <!-- Top bar -->
+  <!-- Topbar -->
   <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#inicio" aria-label="Vigolo Web Studio">
-        <span class="brand__mark">V</span>
-        <span class="brand__text">
-          <strong>VIGOLO</strong>
-          <small>WEB STUDIO</small>
-        </span>
-      </a>
+    <div class="container">
+      <div class="topbar__inner">
+        <a class="brand" href="#inicio" aria-label="Elizard Deco - Inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">
+            <strong>ELIZARD</strong>
+            <small>DECO</small>
+          </span>
+        </a>
 
-      <nav class="nav" aria-label="Navegación principal">
-        <a href="#nichos">Ejemplos</a>
-        <a href="#packs">Packs</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn--ghost" href="#contacto">Contacto</a>
-      </nav>
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#trabajos">Trabajos</a>
+          <a href="#proceso">Diseño en Obra</a>
+          <a href="#render">Render y Planos</a>
+          <a href="#resenas">Reseñas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
 
-      <a class="btn btn--primary topbar__cta" href="#contacto">Cotizar</a>
+        <a class="btn btn--primary" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer">
+          Consultar
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="inicio">
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="pill">Entrega rápida • 5 a 7 días • WhatsApp directo</p>
-          <h1>Webs que convierten visitas en <span class="accent">clientes por WhatsApp</span></h1>
-          <p class="hero__subtitle">
-            Diseñamos webs profesionales orientadas a resultados para <strong>barberías, gimnasios</strong>
-            y también para <strong>cualquier tipo de negocio</strong> que quiera una presencia online premium.
-          </p>
+      <div class="container">
+        <div class="hero__grid">
+          <div>
+            <div class="pill">Diseño a Medida • Terminación Premium • Asesoramiento</div>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20una%20web%20para%20mi%20negocio.%20%C2%BFPueden%20pasarme%20info%20y%20ejemplos%3F">
-              Hablar por WhatsApp
-            </a>
-            <a class="btn btn--secondary" href="#packs">Ver packs y precios</a>
+            <h1>
+              Herrería y Diseño <span class="accent">a Medida</span>
+              para tu Hogar o Negocio.
+            </h1>
+
+            <p class="hero__subtitle">
+              Diseño y fabricación a medida en hierro y estructuras premium para hogares y comercios.
+            </p>
+
+            <ul class="hero__bullets" aria-label="Beneficios principales">
+              <li>Trabajos a medida, sin piezas estándar</li>
+              <li>Instalación incluida</li>
+              <li>Materiales resistentes al exterior</li>
+            </ul>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer">
+                Consultar por WhatsApp
+              </a>
+              <a class="btn btn--ghost" href="#servicios">Ver Servicios</a>
+            </div>
           </div>
 
-          <div class="hero__trust">
-            <div class="trust-item">
-              <div class="trust-item__title">Foco en resultados</div>
-              <div class="trust-item__desc">Estructura pensada para generar consultas</div>
-            </div>
-            <div class="trust-item">
-              <div class="trust-item__title">Mobile first</div>
-              <div class="trust-item__desc">Optimizada para celular (donde llegan tus clientes)</div>
-            </div>
-            <div class="trust-item">
-              <div class="trust-item__title">Proceso claro</div>
-              <div class="trust-item__desc">Rápido, profesional y sin vueltas</div>
+          <div class="hero__media">
+            <div class="media-card">
+              <img src="img/hero.jpg" alt="Proyecto Elizard Deco" loading="lazy" data-lightbox />
+              <div class="media-card__badge">
+                <strong>Elizard Deco</strong>
+                <span>Diseño • Asesoramiento • Obra</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="hero__media">
-          <div class="media-card">
-            <img src="img/mockup.png" alt="Mockup de página web en notebook y celular" loading="eager" />
-            <div class="media-card__badge">
-              <strong>Desde ARS 120.000</strong>
-              <span>Web lista en 5 a 7 días</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Ejemplos (selector) -->
-    <section id="nichos" class="section">
+    <!-- Diferenciales -->
+    <section class="section" id="diferenciales">
       <div class="container">
         <div class="section__head">
-          <h2>Ejemplos por rubro (adaptamos el diseño a tu negocio)</h2>
-          <p>Estos son 3 ejemplos. Si tu rubro es otro, lo diseñamos a medida con tu estilo y objetivo.</p>
+          <h2>Elizard Deco</h2>
+          <p>Estética, asesoramiento y ejecución prolija: una experiencia premium de principio a fin.</p>
         </div>
 
         <div class="cards3">
-          <a class="card card--link" target="_blank" rel="noopener"
-             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/">
-            <div class="card__icon">✨</div>
-            <h3>Estética / Salón</h3>
-            <p>Mostrá tus servicios, reforzá confianza y generá turnos por WhatsApp.</p>
-            <span class="card__cta">Ver demo →</span>
-          </a>
-
-          <a class="card card--link" target="_blank" rel="noopener"
-             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/">
-            <div class="card__icon">💈</div>
-            <h3>Barbería</h3>
-            <p>Imagen premium, información clara y consultas directas por WhatsApp.</p>
-            <span class="card__cta">Ver demo →</span>
-          </a>
-
-          <a class="card card--link" target="_blank" rel="noopener"
-             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/">
-            <div class="card__icon">🏋️</div>
-            <h3>Gym / Fitness</h3>
-            <p>Captá nuevos socios con una propuesta clara y contacto inmediato.</p>
-            <span class="card__cta">Ver demo →</span>
-          </a>
+          <article class="card">
+            <h3>Creadores de Estilos</h3>
+            <p>Propuestas alineadas a tu espacio, tu objetivo y la estética del lugar.</p>
+          </article>
+          <article class="card">
+            <h3>Asesoramiento Real</h3>
+            <p>Guía en materiales, detalles, terminaciones y diseño para que quede impecable.</p>
+          </article>
+          <article class="card">
+            <h3>Ejecución Prolija</h3>
+            <p>Calidad de obra y presentación premium en cada entrega.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Estética -->
-    <section id="estetica" class="section section--alt">
-      <div class="container split">
-        <div class="split__text">
-          <h2>Web para Estética: más turnos y más confianza</h2>
-          <p>
-            Muchas estéticas dependen solo de Instagram y pierden clientas por falta de información clara
-            (servicios, confianza, ubicación, llamados a la acción). Una web bien hecha acelera la decisión.
-          </p>
-          <ul class="checklist">
-            <li>Servicios claros + llamadas a la acción estratégicas</li>
-            <li>Botón WhatsApp visible para reservar turno</li>
-            <li>Diseño elegante y profesional</li>
-            <li>Optimizada para celular</li>
-          </ul>
-          <div class="split__actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20tengo%20una%20est%C3%A9tica%20y%20quiero%20una%20web%20para%20conseguir%20m%C3%A1s%20turnos.%20%C2%BFMe%20pasan%20info%20y%20precio%3F">
-              Quiero mi web para Estética
-            </a>
-            <a class="btn btn--secondary" target="_blank" rel="noopener"
-               href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/">
-              Ver demo
-            </a>
-            <a class="btn btn--ghost" href="#packs">Ver packs</a>
-          </div>
-        </div>
-        <div class="split__media">
-          <img class="rounded" src="img/estetica.png" alt="Mockup web profesional para estética y salón de belleza" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Barbería -->
-    <section id="barberia" class="section">
-      <div class="container split split--reverse">
-        <div class="split__text">
-          <h2>Web para Barbería: imagen pro + consultas todos los días</h2>
-          <p>
-            Si tu barbería se ve bien online, el cliente te elige antes de preguntar precio.
-            Una landing clara con WhatsApp directo suele ser suficiente para aumentar consultas.
-          </p>
-          <ul class="checklist">
-            <li>Servicios destacados + fotos bien presentadas</li>
-            <li>Ubicación, horarios y contacto inmediato</li>
-            <li>Diseño sobrio y moderno</li>
-            <li>Entrega rápida para salir a vender ya</li>
-          </ul>
-          <div class="split__actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20tengo%20una%20barber%C3%ADa%20y%20quiero%20una%20web%20para%20generar%20m%C3%A1s%20consultas.%20%C2%BFMe%20pasan%20info%3F">
-              Quiero mi web para Barbería
-            </a>
-            <a class="btn btn--secondary" target="_blank" rel="noopener"
-               href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/">
-              Ver demo
-            </a>
-            <a class="btn btn--ghost" href="#packs">Ver packs</a>
-          </div>
-        </div>
-        <div class="split__media">
-          <img class="rounded" src="img/barberia.jpg" alt="Ejemplo de web para barbería" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Gym -->
-    <section id="gym" class="section section--alt">
-      <div class="container split">
-        <div class="split__text">
-          <h2>Web para Gym/Fitness: captá nuevos socios</h2>
-          <p>
-            Un gimnasio vende mejor cuando explica su propuesta en 30 segundos:
-            ubicación, planes, clases, beneficios y un CTA directo a WhatsApp.
-          </p>
-          <ul class="checklist">
-            <li>Presentación clara + beneficios del gym</li>
-            <li>Clases/planes y llamado a “pedir info”</li>
-            <li>Testimonios (si tenés, suma fuerte)</li>
-            <li>Optimización para velocidad y mobile</li>
-          </ul>
-          <div class="split__actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20tengo%20un%20gym%20y%20quiero%20una%20web%20para%20captar%20m%C3%A1s%20socios.%20%C2%BFC%C3%B3mo%20trabajan%3F">
-              Quiero mi web para Gym
-            </a>
-            <a class="btn btn--secondary" target="_blank" rel="noopener"
-               href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/">
-              Ver demo
-            </a>
-            <a class="btn btn--ghost" href="#packs">Ver packs</a>
-          </div>
-        </div>
-        <div class="split__media">
-          <img class="rounded" src="img/gym.jpg" alt="Ejemplo de web para gimnasio" loading="lazy" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Packs -->
-    <section id="packs" class="section">
+    <!-- Servicios -->
+    <section class="section section--alt" id="servicios">
       <div class="container">
         <div class="section__head">
-          <h2>Packs y precios</h2>
-          <p>Opciones claras, entregas rápidas y orientadas a resultados.</p>
+          <h2>Servicios</h2>
+          <p>Trabajos a medida, con categorías claras para que el cliente entienda rápido lo que hacés.</p>
         </div>
 
-        <div class="pricing">
-          <!-- Pack 1 -->
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 1 — Web Económica</h3>
-              <div class="price"><span>ARS</span>120.000</div>
-              <p class="muted">One Page • 5 a 7 días</p>
+        <div class="service-grid">
+          <!-- 1 -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Pérgolas</h3>
+              <span class="tag">Premium</span>
             </div>
-            <ul class="bullets">
-              <li>Diseño moderno y profesional</li>
-              <li>Adaptada a celulares (responsive)</li>
-              <li>Botón WhatsApp para contacto inmediato</li>
-              <li>Información esencial del negocio</li>
-            </ul>
-            <a class="btn btn--primary btn--full" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20el%20Pack%201%20(Web%20Econ%C3%B3mica)%20ARS%20120.000.%20%C2%BFC%C3%B3mo%20arrancamos%3F">
-              Pedir Pack 1
-            </a>
+            <p>Estructuras a medida para patios, terrazas y espacios comerciales.</p>
+            <div class="subtags">
+              <span class="subtag">Diseño</span><span class="subtag">Medición</span><span class="subtag">Instalación</span>
+            </div>
+            <div class="mini-gallery">
+              <img src="img/servicios/pergolas-1.jpg" alt="Pérgola - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/pergolas-2.jpg" alt="Pérgola - ejemplo 2" loading="lazy" data-lightbox>
+              <img src="img/servicios/pergolas-3.jpg" alt="Pérgola - ejemplo 3" loading="lazy" data-lightbox>
+            </div>
           </article>
 
-          <!-- Pack 2 -->
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 2 — Web Profesional</h3>
-              <div class="price"><span>ARS</span>350.000</div>
-              <p class="muted">3 a 5 secciones • 7 a 10 días</p>
+          <!-- 2 (CAMBIO DE TÍTULO) -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Cobertores, Puertas y Ventanas</h3>
+              <span class="tag">Detalle</span>
             </div>
-            <ul class="bullets">
-              <li>Diseño premium y personalizado</li>
-              <li>Optimización para convertir</li>
-              <li>WhatsApp + formulario</li>
-              <li>Integración con redes</li>
-            </ul>
-            <a class="btn btn--ghost btn--full" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20info%20del%20Pack%202%20(Web%20Profesional)%20ARS%20350.000.%20%C2%BFQu%C3%A9%20incluye%20exactamente%3F">
-              Pedir Pack 2
-            </a>
+            <p>Soluciones puntuales para ordenar el espacio y levantar la estética.</p>
+            <div class="subtags">
+              <span class="subtag">Cobertor AC</span><span class="subtag">Cubre tanque</span><span class="subtag">Puertas</span>
+            </div>
+            <div class="mini-gallery">
+              <img src="img/servicios/cobertor-ac-1.jpg" alt="Cobertor de aire acondicionado - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/cubretanque-1.jpg" alt="Cubre tanque - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/puertas-1.jpg" alt="Puertas - ejemplo 1" loading="lazy" data-lightbox>
+            </div>
           </article>
 
-          <!-- Pack 3 -->
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 3 — Landing Page de Conversión</h3>
-              <div class="price"><span>ARS</span>250.000</div>
-              <p class="muted">Enfoque en consultas • 5 a 7 días</p>
+          <!-- 3 -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Cerramientos hierro y vidrio</h3>
+              <span class="tag">A medida</span>
             </div>
-            <ul class="bullets">
-              <li>Estructura clara y orientada a resultados</li>
-              <li>CTAs estratégicos (WhatsApp / formulario)</li>
-              <li>Copy optimizado para convertir</li>
-              <li>Diseño premium y mobile first</li>
-            </ul>
-            <a class="btn btn--secondary btn--full" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20el%20Pack%203%20(Landing%20de%20conversi%C3%B3n)%20ARS%20250.000.%20%C2%BFMe%20pas%C3%A1s%20ejemplos%3F">
-              Pedir Pack 3
-            </a>
+            <p>Soluciones modernas para cerrar ambientes sin perder luz y estética.</p>
+            <div class="subtags">
+              <span class="subtag">Plegable</span><span class="subtag">Corredizo</span><span class="subtag">Doble hoja</span>
+            </div>
+            <div class="mini-gallery">
+              <img src="img/servicios/cerramientos-1.jpg" alt="Cerramiento - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/cerramientos-2.jpg" alt="Cerramiento - ejemplo 2" loading="lazy" data-lightbox>
+              <img src="img/servicios/cerramientos-3.jpg" alt="Cerramiento - ejemplo 3" loading="lazy" data-lightbox>
+            </div>
           </article>
 
-          <!-- Pack 4 -->
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 4 — Web + WhatsApp + Redes</h3>
-              <div class="price"><span>ARS</span>440.000</div>
-              <p class="muted">Escalable • 10 a 14 días</p>
+          <!-- 4 -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Portón corredizo y cercos</h3>
+              <span class="tag">Acceso</span>
             </div>
-            <ul class="bullets">
-              <li>Web completa personalizada</li>
-              <li>Integración avanzada WhatsApp y redes</li>
-              <li>Estrategia básica de captación</li>
-              <li>Preparada para escalar</li>
-            </ul>
-            <a class="btn btn--ghost btn--full" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%2C%20quiero%20info%20del%20Pack%204%20(Web%20%2B%20WhatsApp%20%2B%20Redes)%20ARS%20440.000.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20es%20la%20estrategia%3F">
-              Pedir Pack 4
-            </a>
+            <p>Conjunto coherente (portón y cerco) para elevar la estética del frente.</p>
+            <div class="subtags">
+              <span class="subtag">Corredizo</span><span class="subtag">Estructura</span><span class="subtag">Detalle</span>
+            </div>
+            <div class="mini-gallery mini-gallery--2">
+              <img src="img/servicios/portones-1.jpg" alt="Portón - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/portones-2.jpg" alt="Portón - ejemplo 2" loading="lazy" data-lightbox>
+            </div>
           </article>
-        </div>
 
-        <p class="note">
-          * Dominio y hosting opcionales. Si ya tenés, se integra. Si no, te asesoramos.
-        </p>
-      </div>
-    </section>
+          <!-- 5 -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Cercos premium</h3>
+              <span class="tag">Exterior</span>
+            </div>
+            <p>Seguridad y presencia, manteniendo una estética cuidada.</p>
+            <div class="subtags">
+              <span class="subtag">Diseño</span><span class="subtag">Terminación</span><span class="subtag">Instalación</span>
+            </div>
+            <div class="mini-gallery mini-gallery--2">
+              <img src="img/servicios/cercos-1.jpg" alt="Cerco - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/cercos-2.jpg" alt="Cerco - ejemplo 2" loading="lazy" data-lightbox>
+            </div>
+          </article>
 
-    <!-- Proceso -->
-    <section id="proceso" class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2>Proceso de trabajo</h2>
-          <p>Ordenado, rápido y profesional. Vos nos pasás lo esencial y nosotros nos encargamos del resto.</p>
-        </div>
+          <!-- 6 -->
+          <article class="service-card">
+            <div class="service-card__top">
+              <h3>Chapa decorativa y estructura</h3>
+              <span class="tag">Diseño</span>
+            </div>
+            <p>Cerramientos con presencia premium, cuidando el detalle visual.</p>
+            <div class="subtags">
+              <span class="subtag">Chapa</span><span class="subtag">Hierro</span><span class="subtag">Terminación</span>
+            </div>
+            <div class="mini-gallery mini-gallery--2">
+              <img src="img/servicios/chapa-1.jpg" alt="Chapa decorativa - ejemplo 1" loading="lazy" data-lightbox>
+              <img src="img/servicios/chapa-2.jpg" alt="Chapa decorativa - ejemplo 2" loading="lazy" data-lightbox>
+            </div>
+          </article>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step__n">1</div>
-            <h3>Brief rápido</h3>
-            <p>Nos contás tu rubro, servicios y objetivo. Definimos la mejor opción para tu caso.</p>
-          </div>
-          <div class="step">
-            <div class="step__n">2</div>
-            <h3>Diseño + estructura</h3>
-            <p>Armamos una web clara, estética y con CTAs a WhatsApp para convertir.</p>
-          </div>
-          <div class="step">
-            <div class="step__n">3</div>
-            <h3>Revisión</h3>
-            <p>Te mostramos una demo y ajustamos detalles para que quede perfecta.</p>
-          </div>
-          <div class="step">
-            <div class="step__n">4</div>
-            <h3>Publicación</h3>
-            <p>La dejamos online y lista para que empieces a recibir consultas.</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section">
+    <!-- Trabajos -->
+    <section class="section" id="trabajos">
       <div class="container">
         <div class="section__head">
-          <h2>Preguntas frecuentes</h2>
-          <p>Respuestas cortas a las dudas más comunes.</p>
+          <h2>Trabajos</h2>
+          <p>Una selección de proyectos para ver estilo, nivel de terminación y calidad de ejecución.</p>
         </div>
 
-        <div class="faq">
-          <details>
-            <summary>¿Cuánto tardan?</summary>
-            <p>Pack 1 y Pack 3: 5 a 7 días. Pack 2: 7 a 10 días. Pack 4: 10 a 14 días.</p>
-          </details>
-          <details>
-            <summary>¿Necesito dominio y hosting?</summary>
-            <p>No necesariamente. Si ya tenés, lo integramos. Si no, te lo gestionamos como adicional.</p>
-          </details>
-          <details>
-            <summary>¿La web funciona bien en celular?</summary>
-            <p>Sí. Se diseña mobile first para que convierta desde Instagram/Google/WhatsApp.</p>
-          </details>
-          <details>
-            <summary>¿Qué te tengo que pasar para arrancar?</summary>
-            <p>Logo (si tenés), nombre del negocio, servicios, ubicación, horarios y 5–10 fotos. Si no tenés todo, igual empezamos.</p>
-          </details>
+        <div class="gallery">
+          <img src="img/trabajos/trabajo-1.jpg" alt="Trabajo 1" loading="lazy" data-lightbox>
+          <img src="img/trabajos/trabajo-2.jpg" alt="Trabajo 2" loading="lazy" data-lightbox>
+          <img src="img/trabajos/trabajo-3.jpg" alt="Trabajo 3" loading="lazy" data-lightbox>
+          <img src="img/trabajos/trabajo-4.jpg" alt="Trabajo 4" loading="lazy" data-lightbox>
+          <img src="img/trabajos/trabajo-5.jpg" alt="Trabajo 5" loading="lazy" data-lightbox>
+          <img src="img/trabajos/trabajo-6.jpg" alt="Trabajo 6" loading="lazy" data-lightbox>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diseño en Obra -->
+    <section class="section section--alt" id="proceso">
+      <div class="container">
+        <div class="section__head">
+          <h2>Diseño en Obra</h2>
+          <p>Para visualizar el proceso del proyecto: idea, planificación y resultado final.</p>
+        </div>
+
+        <div class="split">
+          <div class="split__text">
+            <p>
+              Algunos clientes arrancan con una idea o una referencia. Nosotros ayudamos a ordenar el concepto,
+              asesorar en materiales y terminaciones, y ejecutar con una estética cuidada.
+            </p>
+            <ul class="checklist">
+              <li>Asesoramiento y estética (propuesta clara)</li>
+              <li>Planificación según espacio y objetivo</li>
+              <li>Terminación prolija y entrega premium</li>
+            </ul>
+
+            <div class="split__actions">
+              <a class="btn btn--primary" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer">
+                Consultar un Proyecto
+              </a>
+              <a class="btn btn--ghost" href="#render">Ver Render y Planos</a>
+            </div>
+          </div>
+
+          <div class="compare">
+            <figure class="rounded compare__item">
+              <img src="img/proceso/render.jpg" alt="Diseño / referencia del proyecto" loading="lazy" data-lightbox>
+              <figcaption>Referencia / diseño (visualización previa)</figcaption>
+            </figure>
+
+            <figure class="rounded compare__item">
+              <img src="img/proceso/obra.jpg" alt="Trabajo realizado por Elizard Deco" loading="lazy" data-lightbox>
+              <figcaption>Trabajo realizado (terminación y estética final)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Render y Planos -->
+    <section class="section" id="render">
+      <div class="container">
+        <div class="section__head">
+          <h2>Render y Planos</h2>
+          <p>Cuando el proyecto lo requiere, mostramos el diseño con render, planos y referencias para alinear expectativas antes de fabricar.</p>
+        </div>
+
+        <div class="render-grid">
+          <figure class="render-card">
+            <img src="img/render/render-1.jpg" alt="Render / plano - ejemplo 1" loading="lazy" data-lightbox>
+            <figcaption>Render o plano (ejemplo)</figcaption>
+          </figure>
+          <figure class="render-card">
+            <img src="img/render/render-2.jpg" alt="Render / plano - ejemplo 2" loading="lazy" data-lightbox>
+            <figcaption>Detalle / vista técnica (ejemplo)</figcaption>
+          </figure>
+          <figure class="render-card">
+            <img src="img/render/render-3.jpg" alt="Render / plano - ejemplo 3" loading="lazy" data-lightbox>
+            <figcaption>Materiales y terminaciones (ejemplo)</figcaption>
+          </figure>
+        </div>
+
+        <div class="center-actions">
+          <a class="btn btn--ghost" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer">
+            Pedir una propuesta con render
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas (REEMPLAZADAS POR REALES + LINK) -->
+    <section class="section section--alt" id="resenas">
+      <div class="container">
+        <div class="section__head">
+          <h2>Reseñas 5 estrellas</h2>
+          <p>Opiniones reales de clientes en Google.</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review__text">“El trabajo que realizaron fue excelente. Cumplieron en tiempo y forma, con una calidad impecable y una atención muy profesional. Superaron mis expectativas y los recomiendo 100%. ¡Genios!”</p>
+            <p class="review__meta">Matías Pernas • Google Reviews</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review__text">“Vinieron hasta CABA. Excelente trabajo, muy prolijos. Muy buena calidad de producto (más lindo de lo que son las fotos). Muy atentos durante y post servicio. Recomiendo 100%.”</p>
+            <p class="review__meta">Federico Fasano • Google Reviews</p>
+          </article>
+
+          <article class="review">
+            <div class="stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="review__text">“Hice un ventanal de vidrio repartido. El trabajo quedó excelente. Me lo entregaron en tiempo y forma. Atentos a los detalles y con la mejor predisposición. ¡Voy a seguir haciendo cosas con ellos sin dudarlo!”</p>
+            <p class="review__meta">Clara Roccatagliata • Google Reviews</p>
+          </article>
+        </div>
+
+        <div class="center-actions">
+          <a class="btn btn--primary"
+             href="https://www.google.com/search?sca_esv=4c4e6101c633db36&rlz=1CDGOYI_enAR1161AR1161&hl=es&sxsrf=ANbL-n4AlrnlGOSCZccq4X3fOuJAWfhLCw:1772488183347&q=opiniones+de+elizarddeco&uds=ALYpb_kH5N_kfrB-KsEDOaDf3REQcAyFaBjrGcF5QBrOE75smnSusvPLlLaKn9eBcPl1-Ic9hgaXSHyLqkhUenWgAxauR12l6c36q8XISH1VqpxZ4-mHxkCwSQ9k13rg8lZGav-sATRP0qzbpFiCIXn77GZALOwKDU9mKcbaBbR7-MoCYG2YyH7Wt_xhOW6qTSPoBPh_u5FSKMvLoWXiTAdZgzWNxBucbRaI1D-g9g4HJvAOl89BXYw-BKy2wb1GO8DUlSh9vYZ2CGzoYa9CrHRU5yvNlpBZmcsn0KtZuA4ndL2zplFjgoOi3rZeE8_yPfxZwtgjdQzM04fFRUMc5Z0uELoo6VVMNsopUVWkKkOYitueuZssYbSiOxYUZZGij7AsuV75lZ06TF_UmVHPJtvzJT4BNli7IZ9-W3XWJTKUb2cGErEM3Jg&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOad5m9bssgAnviNrB0fovu-0L5cnB5MinfSBzb-WS0ajaphFQk-pOL8v9Fno89jryJerCWQUVJa5FKQz_CQkHXAa7fyGzAnUwvCmprM4G6G1yk4ceA%3D%3D&sa=X&ved=2ahUKEwjnzKWEmYKTAxWTIbkGHYtxKbgQk8gLegQIEBAB&ictx=1&biw=375&bih=640&dpr=3#ebo=3"
+             target="_blank" rel="noreferrer">
+            Ver todas las reseñas en Google
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="section contact">
-      <div class="container contact__grid">
+    <section class="section section--alt" id="contacto">
+      <div class="container">
         <div class="contact__card">
-          <h2>Listo. Atraé más clientes con una web profesional.</h2>
+          <h2>Contacto</h2>
           <p>
-            Si tenés una <strong>estética</strong>, <strong>barbería</strong>, <strong>gimnasio</strong>
-            o <strong>cualquier tipo de negocio</strong> y querés una web profesional para atraer más clientes,
-            escribinos y te mostramos un ejemplo adaptado a tu rubro.
+            Contanos qué necesitás y te respondemos por WhatsApp.
+            Trabajos en <strong>Zona Sur</strong> y también en <strong>Zona Norte, Oeste, CABA</strong> y alrededores.
           </p>
 
           <div class="contact__actions">
-            <a class="btn btn--primary" target="_blank" rel="noopener"
-               href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20web%20para%20mi%20negocio.%20%C2%BFPueden%20pasarme%20info%20y%20ejemplos%3F">
-              WhatsApp: +54 11 2807 4105
+            <a class="btn btn--primary" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer">
+              Consultar por WhatsApp
             </a>
-            <a class="btn btn--secondary" href="mailto:vigolomarketing@gmail.com">
-              vigolomarketing@gmail.com
-            </a>
+            <a class="btn btn--ghost" href="#servicios">Ver Servicios</a>
+          </div>
+
+          <div class="contact__chips">
+            <span class="chip">A Medida</span>
+            <span class="chip">Asesoramiento</span>
+            <span class="chip">Terminación Premium</span>
+            <span class="chip">Obra Prolija</span>
           </div>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container footer__inner">
-        <span>© <span id="year"></span> Vigolo Web Studio</span>
-        <span class="muted">Webs orientadas a resultados</span>
-      </div>
-    </footer>
   </main>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Elizard Deco</div>
+        <div class="muted">Diseño a Medida • Zona Sur / CABA / GBA</div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-fab" href="https://wa.me/5491168623427" target="_blank" rel="noreferrer" aria-label="WhatsApp Elizard Deco">
+    WhatsApp
+  </a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb__btn lb__close" type="button" aria-label="Cerrar (Esc)">✕</button>
+    <button class="lb__btn lb__prev" type="button" aria-label="Anterior">‹</button>
+    <figure class="lb__frame" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <img class="lb__img" alt="" />
+      <figcaption class="lb__cap"></figcaption>
+    </figure>
+    <button class="lb__btn lb__next" type="button" aria-label="Siguiente">›</button>
+  </div>
+
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Placeholder prolijo si faltan imágenes (evita ícono roto)
+    const placeholder = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0b0c10"/>
+            <stop offset="1" stop-color="#14161c"/>
+          </linearGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          font-family="Arial" font-size="34" fill="rgba(255,255,255,0.45)">
+          Imagen pendiente
+        </text>
+      </svg>
+    `)}`;
+
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("error", () => { img.src = placeholder; });
+    });
+
+    // === Lightbox (mobile OK + swipe) ===
+    const lb = document.getElementById('lightbox');
+    const lbImg = lb.querySelector('.lb__img');
+    const lbCap = lb.querySelector('.lb__cap');
+    const btnClose = lb.querySelector('.lb__close');
+    const btnPrev = lb.querySelector('.lb__prev');
+    const btnNext = lb.querySelector('.lb__next');
+
+    // Armamos una lista en el orden del DOM, solo con imágenes clickeables
+    const clickable = Array.from(document.querySelectorAll('img[data-lightbox]'));
+
+    let currentIndex = -1;
+
+    function openAt(index){
+      if(index < 0 || index >= clickable.length) return;
+      currentIndex = index;
+      const el = clickable[currentIndex];
+
+      lbImg.src = el.currentSrc || el.src;
+      lbImg.alt = el.alt || 'Imagen ampliada';
+      lbCap.textContent = el.alt || '';
+
+      lb.classList.add('is-open');
+      lb.setAttribute('aria-hidden', 'false');
+      document.documentElement.classList.add('no-scroll');
+
+      // esconder flechas si hay 1 sola imagen
+      const showArrows = clickable.length > 1;
+      btnPrev.style.display = showArrows ? '' : 'none';
+      btnNext.style.display = showArrows ? '' : 'none';
+    }
+
+    function closeLb(){
+      lb.classList.remove('is-open');
+      lb.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.remove('no-scroll');
+      // limpieza
+      lbImg.src = '';
+      lbCap.textContent = '';
+      currentIndex = -1;
+    }
+
+    function prev(){
+      if(clickable.length <= 1) return;
+      const nextIndex = (currentIndex - 1 + clickable.length) % clickable.length;
+      openAt(nextIndex);
+    }
+
+    function next(){
+      if(clickable.length <= 1) return;
+      const nextIndex = (currentIndex + 1) % clickable.length;
+      openAt(nextIndex);
+    }
+
+    clickable.forEach((img, idx) => {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', () => openAt(idx));
+    });
+
+    btnClose.addEventListener('click', closeLb);
+    btnPrev.addEventListener('click', prev);
+    btnNext.addEventListener('click', next);
+
+    // Click afuera cierra
+    lb.addEventListener('click', (e) => {
+      if(e.target === lb) closeLb();
+    });
+
+    // Teclado
+    document.addEventListener('keydown', (e) => {
+      if(!lb.classList.contains('is-open')) return;
+      if(e.key === 'Escape') closeLb();
+      if(e.key === 'ArrowLeft') prev();
+      if(e.key === 'ArrowRight') next();
+    });
+
+    // Swipe (mobile)
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touching = false;
+
+    lb.addEventListener('touchstart', (e) => {
+      if(!lb.classList.contains('is-open')) return;
+      const t = e.touches[0];
+      touching = true;
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+    }, {passive:true});
+
+    lb.addEventListener('touchend', (e) => {
+      if(!touching || !lb.classList.contains('is-open')) return;
+      touching = false;
+
+      const t = e.changedTouches[0];
+      const dx = t.clientX - touchStartX;
+      const dy = t.clientY - touchStartY;
+
+      // swipe horizontal claro, ignorar vertical
+      if(Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)){
+        if(dx > 0) prev();
+        else next();
+      }
+    }, {passive:true});
   </script>
 </body>
 </html>
