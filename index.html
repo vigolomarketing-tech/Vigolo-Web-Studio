@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vigolo Web Studio | Webs que convierten visitas en clientes</title>
+
+  <title>Vigolo Web Studio | Páginas web profesionales</title>
+
   <meta
     name="description"
-    content="Diseñamos webs profesionales orientadas a resultados para barberías, estéticas, gimnasios y negocios que quieran más clientes por WhatsApp."
+    content="Diseño y desarrollo de páginas web profesionales para negocios, marcas y emprendimientos que quieren mejorar su presencia digital."
   />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet"
   />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container nav">
-      <a href="#" class="logo">Vigolo <span>Web Studio</span></a>
+      <a href="#" class="logo">
+        <span class="logo__mark">V</span>
+        <div>
+          <strong>Vigolo</strong>
+          <small>Web Studio</small>
+        </div>
+      </a>
 
       <nav class="nav__menu">
-        <a href="#rubros">Rubros</a>
-        <a href="#packs">Packs</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#servicios">Servicios</a>
         <a href="#proceso">Proceso</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto" class="btn btn--nav">Contactar</a>
@@ -36,17 +48,16 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__content">
-          <p class="pill">Entrega rápida • 5 a 7 días • WhatsApp directo</p>
+          <p class="pill">Diseño web profesional • Presencia digital • Desarrollo a medida</p>
 
           <h1>
-            Webs que convierten visitas en
-            <span class="accent">clientes por WhatsApp</span>
+            Tu negocio merece una
+            <span class="accent">página web profesional</span>
           </h1>
 
           <p class="hero__subtitle">
-            Diseñamos webs profesionales orientadas a resultados para
-            <strong>estéticas, barberías, gimnasios</strong> y también para
-            <strong>cualquier tipo de negocio</strong> que quiera una presencia online premium.
+            Creamos sitios modernos, claros y funcionales para negocios, marcas y emprendimientos
+            que quieren verse más serios, transmitir confianza y destacar online.
           </p>
 
           <div class="hero__actions">
@@ -54,317 +65,223 @@
               class="btn btn--primary"
               target="_blank"
               rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20web%20para%20mi%20negocio."
+              href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional%20para%20mi%20negocio."
             >
               Pedir presupuesto
             </a>
 
-            <a class="btn btn--secondary" href="#rubros">
-              Ver demos
+            <a class="btn btn--secondary" href="#portfolio">
+              Ver trabajos
             </a>
           </div>
 
           <div class="hero__badges">
-            <span>Diseño premium</span>
+            <span>Diseño moderno</span>
             <span>Responsive</span>
-            <span>Orientado a conversión</span>
+            <span>A medida</span>
           </div>
         </div>
 
-        <div class="hero__card">
-          <div class="mockup">
-            <div class="mockup__top">
-              <span></span><span></span><span></span>
+        <div class="hero__visual">
+          <div class="visual-card">
+            <div class="visual-card__top">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="mockup__body">
-              <div class="mockup__line mockup__line--lg"></div>
-              <div class="mockup__line"></div>
-              <div class="mockup__line"></div>
-              <div class="mockup__grid">
-                <div></div>
-                <div></div>
-                <div></div>
+
+            <div class="visual-card__body">
+              <p class="visual-card__tag">Web profesional</p>
+              <h2>Presencia digital para tu negocio</h2>
+              <p>
+                Diseño, estructura y desarrollo pensados para que tu marca se vea mejor desde el primer clic.
+              </p>
+
+              <div class="visual-card__items">
+                <span>Portfolio</span>
+                <span>Servicios</span>
+                <span>Contacto</span>
               </div>
-              <div class="mockup__cta"></div>
+
+              <div class="visual-card__button"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- RUBROS / DEMOS -->
-    <section id="rubros" class="section">
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow">Demos por rubro</p>
-          <h2>Mostrale al cliente algo profesional desde el primer mensaje</h2>
+          <p class="eyebrow">Portfolio</p>
+          <h2>Trabajos, demos y proyectos web</h2>
           <p>
-            Ejemplos pensados para negocios que necesitan verse mejor, generar confianza
-            y recibir consultas rápidas.
+            Ejemplos de sitios creados para distintos tipos de negocios, servicios y marcas.
           </p>
         </div>
 
-        <div class="cards3">
+        <div class="portfolio-grid">
           <a
-            class="card card--link"
+            class="project-card"
             target="_blank"
             rel="noopener"
             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/"
           >
-            <div class="card__icon">✨</div>
+            <div class="project-card__top">
+              <span>Demo</span>
+              <small>Estética</small>
+            </div>
             <h3>Estética / Salón</h3>
-            <p>Mostrá servicios, reforzá confianza y generá turnos por WhatsApp.</p>
-            <span class="card__cta">Ver demo →</span>
+            <p>Web visual, elegante y preparada para mostrar servicios, fotos y contacto.</p>
+            <strong>Ver proyecto →</strong>
           </a>
 
           <a
-            class="card card--link"
+            class="project-card"
             target="_blank"
             rel="noopener"
             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/"
           >
-            <div class="card__icon">💈</div>
+            <div class="project-card__top">
+              <span>Demo</span>
+              <small>Barbería</small>
+            </div>
             <h3>Barbería</h3>
-            <p>Imagen premium, precios claros y consultas directas por WhatsApp.</p>
-            <span class="card__cta">Ver demo →</span>
+            <p>Estética premium, estructura clara y presencia profesional para el negocio.</p>
+            <strong>Ver proyecto →</strong>
           </a>
 
           <a
-            class="card card--link"
+            class="project-card"
             target="_blank"
             rel="noopener"
             href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/"
           >
-            <div class="card__icon">🏋️</div>
-            <h3>Gym / Fitness</h3>
-            <p>Captá nuevos socios con una propuesta clara y una web que convierta.</p>
-            <span class="card__cta">Ver demo →</span>
+            <div class="project-card__top">
+              <span>Demo</span>
+              <small>Fitness</small>
+            </div>
+            <h3>Gimnasio / Fitness</h3>
+            <p>Web pensada para comunicar planes, beneficios y propuesta del gimnasio.</p>
+            <strong>Ver proyecto →</strong>
+          </a>
+
+          <a
+            class="project-card"
+            target="_blank"
+            rel="noopener"
+            href="https://vigolomarketing-tech.github.io/vigolo-electricidad/"
+          >
+            <div class="project-card__top">
+              <span>Proyecto</span>
+              <small>Servicios</small>
+            </div>
+            <h3>Electricidad</h3>
+            <p>Sitio profesional para servicios domiciliarios, industriales y matriculados.</p>
+            <strong>Ver proyecto →</strong>
+          </a>
+
+          <a
+            class="project-card"
+            target="_blank"
+            rel="noopener"
+            href="https://vigolomarketing-tech.github.io/Metales-sur/"
+          >
+            <div class="project-card__top">
+              <span>Proyecto</span>
+              <small>Catálogo</small>
+            </div>
+            <h3>Metales Sur</h3>
+            <p>Catálogo digital para productos, categorías, consultas y presencia de marca.</p>
+            <strong>Ver proyecto →</strong>
+          </a>
+
+          <a
+            class="project-card"
+            target="_blank"
+            rel="noopener"
+            href="https://vigolomarketing-tech.github.io/famma-beauty/#inicio"
+          >
+            <div class="project-card__top">
+              <span>Proyecto</span>
+              <small>Beauty</small>
+            </div>
+            <h3>Famma Beauty</h3>
+            <p>Web estética, delicada y moderna para marca del rubro belleza.</p>
+            <strong>Ver proyecto →</strong>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- BLOQUES POR RUBRO -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="split">
-          <div class="split__content">
-            <p class="eyebrow">Para estéticas</p>
-            <h2>Una web que haga ver tu negocio más profesional</h2>
-            <p>
-              Ideal para mostrar tratamientos, ubicación, horarios, fotos reales
-              y un acceso directo a WhatsApp para sacar turnos.
-            </p>
-
-            <div class="split__actions">
-              <a
-                class="btn btn--primary"
-                target="_blank"
-                rel="noopener"
-                href="https://wa.me/541128074105?text=Hola%2C%20tengo%20una%20est%C3%A9tica%20y%20quiero%20una%20web%20para%20conseguir%20m%C3%A1s%20turnos.%20%C2%BFMe%20pasan%20info%20y%20precio%3F"
-              >
-                Quiero mi web para Estética
-              </a>
-              <a
-                class="btn btn--secondary"
-                target="_blank"
-                rel="noopener"
-                href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/"
-              >
-                Ver demo
-              </a>
-              <a class="btn btn--ghost" href="#packs">Ver packs</a>
-            </div>
-          </div>
-
-          <div class="split__media">
-            <img class="rounded" src="img/estetica.jpg" alt="Ejemplo de web para estética" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="split split--reverse">
-          <div class="split__content">
-            <p class="eyebrow">Para barberías</p>
-            <h2>Tu barbería puede verse premium antes de que entren al local</h2>
-            <p>
-              Mostrá cortes, estilo, ubicación, medios de contacto y una imagen
-              mucho más seria para destacar frente a la competencia.
-            </p>
-
-            <div class="split__actions">
-              <a
-                class="btn btn--primary"
-                target="_blank"
-                rel="noopener"
-                href="https://wa.me/541128074105?text=Hola%2C%20tengo%20una%20barber%C3%ADa%20y%20quiero%20una%20web%20para%20generar%20m%C3%A1s%20consultas.%20%C2%BFMe%20pasan%20info%3F"
-              >
-                Quiero mi web para Barbería
-              </a>
-              <a
-                class="btn btn--secondary"
-                target="_blank"
-                rel="noopener"
-                href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/"
-              >
-                Ver demo
-              </a>
-              <a class="btn btn--ghost" href="#packs">Ver packs</a>
-            </div>
-          </div>
-
-          <div class="split__media">
-            <img class="rounded" src="img/barberia.jpg" alt="Ejemplo de web para barbería" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="split">
-          <div class="split__content">
-            <p class="eyebrow">Para gimnasios</p>
-            <h2>Convertí visitas en nuevos socios</h2>
-            <p>
-              Una estructura clara, planes visibles, beneficios bien comunicados
-              y contacto inmediato para que la gente consulte sin vueltas.
-            </p>
-
-            <div class="split__actions">
-              <a
-                class="btn btn--primary"
-                target="_blank"
-                rel="noopener"
-                href="https://wa.me/541128074105?text=Hola%2C%20tengo%20un%20gym%20y%20quiero%20una%20web%20para%20captar%20m%C3%A1s%20socios.%20%C2%BFC%C3%B3mo%20trabajan%3F"
-              >
-                Quiero mi web para Gym
-              </a>
-              <a
-                class="btn btn--secondary"
-                target="_blank"
-                rel="noopener"
-                href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/"
-              >
-                Ver demo
-              </a>
-              <a class="btn btn--ghost" href="#packs">Ver packs</a>
-            </div>
-          </div>
-
-          <div class="split__media">
-            <img class="rounded" src="img/gym.jpg" alt="Ejemplo de web para gimnasio" loading="lazy" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PACKS -->
-    <section id="packs" class="section">
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section--alt">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow">Packs y precios</p>
-          <h2>Opciones claras para vender más fácil</h2>
-          <p>Precios ordenados, entregas rápidas y enfoque real en resultados.</p>
+          <p class="eyebrow">Servicios</p>
+          <h2>Soluciones web para distintos objetivos</h2>
+          <p>
+            Cada proyecto se presupuesta según el alcance, la estructura, el contenido y el nivel de desarrollo necesario.
+          </p>
         </div>
 
-        <div class="pricing">
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 1 — Web Económica</h3>
-              <div class="price"><span>ARS</span>120.000</div>
-              <p class="muted">One Page • 5 a 7 días</p>
-            </div>
-            <ul class="bullets">
-              <li>Diseño moderno y profesional</li>
-              <li>Adaptada a celulares</li>
-              <li>Botón de WhatsApp</li>
-              <li>Información esencial del negocio</li>
-            </ul>
-            <a
-              class="btn btn--primary btn--full"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20el%20Pack%201%20(Web%20Econ%C3%B3mica)%20ARS%20120.000.%20%C2%BFC%C3%B3mo%20arrancamos%3F"
-            >
-              Pedir Pack 1
-            </a>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-card__icon">01</div>
+            <h3>Web institucional</h3>
+            <p>
+              Sitios profesionales para negocios que necesitan presentar su marca, servicios, ubicación y canales de contacto.
+            </p>
           </article>
 
-          <article class="price-card price-card--featured">
-            <div class="price-card__badge">Más elegido</div>
-            <div class="price-card__top">
-              <h3>Pack 2 — Web Profesional</h3>
-              <div class="price"><span>ARS</span>350.000</div>
-              <p class="muted">3 a 5 secciones • 7 a 10 días</p>
-            </div>
-            <ul class="bullets">
-              <li>Diseño premium y personalizado</li>
-              <li>Optimización para convertir</li>
-              <li>WhatsApp + formulario</li>
-              <li>Integración con redes</li>
-            </ul>
-            <a
-              class="btn btn--primary btn--full"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20info%20del%20Pack%202%20(Web%20Profesional)%20ARS%20350.000.%20%C2%BFQu%C3%A9%20incluye%20exactamente%3F"
-            >
-              Pedir Pack 2
-            </a>
+          <article class="service-card">
+            <div class="service-card__icon">02</div>
+            <h3>Landing page profesional</h3>
+            <p>
+              Páginas enfocadas en comunicar una oferta, servicio o campaña de forma clara, directa y visual.
+            </p>
           </article>
 
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 3 — Landing de Conversión</h3>
-              <div class="price"><span>ARS</span>250.000</div>
-              <p class="muted">Enfoque en consultas • 5 a 7 días</p>
-            </div>
-            <ul class="bullets">
-              <li>Estructura clara y orientada a resultados</li>
-              <li>CTAs estratégicos</li>
-              <li>Copy optimizado para convertir</li>
-              <li>Diseño premium y mobile first</li>
-            </ul>
-            <a
-              class="btn btn--secondary btn--full"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20el%20Pack%203%20(Landing%20de%20conversi%C3%B3n)%20ARS%20250.000.%20%C2%BFMe%20pas%C3%A1s%20ejemplos%3F"
-            >
-              Pedir Pack 3
-            </a>
+          <article class="service-card">
+            <div class="service-card__icon">03</div>
+            <h3>Catálogo online</h3>
+            <p>
+              Webs para mostrar productos, categorías, imágenes, detalles y consultas de manera ordenada.
+            </p>
           </article>
 
-          <article class="price-card">
-            <div class="price-card__top">
-              <h3>Pack 4 — Web + WhatsApp + Redes</h3>
-              <div class="price"><span>ARS</span>440.000</div>
-              <p class="muted">Escalable • 10 a 14 días</p>
-            </div>
-            <ul class="bullets">
-              <li>Web completa personalizada</li>
-              <li>Integración avanzada con WhatsApp y redes</li>
-              <li>Estrategia básica de captación</li>
-              <li>Preparada para escalar</li>
-            </ul>
-            <a
-              class="btn btn--ghost btn--full"
-              target="_blank"
-              rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20info%20del%20Pack%204%20(Web%20%2B%20WhatsApp%20%2B%20Redes)%20ARS%20440.000.%20%C2%BFMe%20cont%C3%A1s%20c%C3%B3mo%20es%20la%20estrategia%3F"
-            >
-              Pedir Pack 4
-            </a>
+          <article class="service-card">
+            <div class="service-card__icon">04</div>
+            <h3>Web para servicios</h3>
+            <p>
+              Ideal para profesionales, oficios, técnicos y empresas que necesitan transmitir confianza y recibir consultas.
+            </p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <p class="note">
-          * Dominio y hosting opcionales. Si ya tenés, lo integramos. Si no, te asesoramos.
-        </p>
+    <!-- DIFERENCIA -->
+    <section class="section">
+      <div class="container">
+        <div class="split-clean">
+          <div>
+            <p class="eyebrow">Enfoque</p>
+            <h2>No es solo diseño. Es estructura para tu presencia digital.</h2>
+          </div>
+
+          <div>
+            <p>
+              Una página profesional tiene que verse bien, cargar rápido, funcionar en celular y explicar claramente
+              quién sos, qué ofrecés y por qué deberían elegirte.
+            </p>
+
+            <p>
+              En Vigolo Web Studio trabajamos cada proyecto con una estructura clara, estética moderna y enfoque comercial.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -372,31 +289,36 @@
     <section id="proceso" class="section section--alt">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow">Cómo trabajamos</p>
-          <h2>Proceso simple, rápido y profesional</h2>
-          <p>Nos pasás lo esencial y nosotros armamos una web lista para vender.</p>
+          <p class="eyebrow">Proceso</p>
+          <h2>Cómo trabajamos</h2>
+          <p>
+            Un proceso ordenado para que tu web avance con claridad desde la idea inicial hasta la publicación.
+          </p>
         </div>
 
         <div class="steps">
           <div class="step">
             <div class="step__n">1</div>
-            <h3>Brief rápido</h3>
-            <p>Nos contás tu rubro, servicios y objetivo principal.</p>
+            <h3>Diagnóstico del proyecto</h3>
+            <p>Analizamos tu negocio, objetivos, servicios, referencias y el tipo de web que necesitás.</p>
           </div>
+
           <div class="step">
             <div class="step__n">2</div>
-            <h3>Diseño + estructura</h3>
-            <p>Armamos una web clara, estética y con foco en conversión.</p>
+            <h3>Propuesta y estructura</h3>
+            <p>Definimos secciones, contenido, estilo visual y alcance para presupuestar correctamente.</p>
           </div>
+
           <div class="step">
             <div class="step__n">3</div>
-            <h3>Revisión</h3>
-            <p>Te mostramos una demo y ajustamos detalles importantes.</p>
+            <h3>Diseño y desarrollo</h3>
+            <p>Construimos la web con diseño moderno, versión responsive y una experiencia clara para el usuario.</p>
           </div>
+
           <div class="step">
             <div class="step__n">4</div>
-            <h3>Publicación</h3>
-            <p>La dejamos online y lista para recibir consultas.</p>
+            <h3>Revisión y publicación</h3>
+            <p>Ajustamos detalles finales, publicamos el sitio y dejamos todo listo para compartirlo.</p>
           </div>
         </div>
       </div>
@@ -406,30 +328,50 @@
     <section id="faq" class="section">
       <div class="container">
         <div class="section__head">
-          <p class="eyebrow">Preguntas frecuentes</p>
-          <h2>Dudas comunes antes de arrancar</h2>
-          <p>Todo claro, simple y sin vueltas.</p>
+          <p class="eyebrow">FAQ</p>
+          <h2>Preguntas frecuentes</h2>
+          <p>Respuestas claras antes de empezar un proyecto.</p>
         </div>
 
         <div class="faq">
           <details>
-            <summary>¿Cuánto tardan?</summary>
-            <p>Pack 1 y Pack 3: 5 a 7 días. Pack 2: 7 a 10 días. Pack 4: 10 a 14 días.</p>
+            <summary>¿Cuánto cuesta una página web?</summary>
+            <p>
+              Depende del tipo de proyecto, cantidad de secciones, contenido y funcionalidades.
+              Primero analizamos lo que necesitás y después te pasamos un presupuesto claro.
+            </p>
+          </details>
+
+          <details>
+            <summary>¿Cuánto tarda el desarrollo?</summary>
+            <p>
+              Una web simple puede estar lista en pocos días. Proyectos más completos pueden requerir más tiempo
+              según el contenido, revisiones y alcance.
+            </p>
           </details>
 
           <details>
             <summary>¿Necesito dominio y hosting?</summary>
-            <p>No necesariamente. Si ya tenés, lo integramos. Si no, te asesoramos para resolverlo.</p>
+            <p>
+              Sí, para publicar una web profesional necesitás dominio y hosting. Si ya tenés, lo integramos.
+              Si no tenés, te asesoramos y lo resolvemos.
+            </p>
           </details>
 
           <details>
-            <summary>¿Funciona bien en celular?</summary>
-            <p>Sí. Está pensada mobile first para que convierta desde Instagram, Google y WhatsApp.</p>
+            <summary>¿La web funciona bien en celular?</summary>
+            <p>
+              Sí. Diseñamos con enfoque responsive para que la web se vea correctamente en celulares,
+              tablets y computadoras.
+            </p>
           </details>
 
           <details>
-            <summary>¿Qué tengo que mandar para arrancar?</summary>
-            <p>Logo, nombre del negocio, servicios, horarios, ubicación y algunas fotos. Si no tenés todo, igual se puede avanzar.</p>
+            <summary>¿Qué tengo que enviar para empezar?</summary>
+            <p>
+              Nombre del negocio, rubro, servicios, textos principales, logo si tenés, redes, datos de contacto
+              y fotos o referencias visuales.
+            </p>
           </details>
         </div>
       </div>
@@ -440,11 +382,10 @@
       <div class="container">
         <div class="contact__card">
           <p class="eyebrow">Contacto</p>
-          <h2>Listo. Atraé más clientes con una web profesional.</h2>
+          <h2>Hablemos de tu próxima página web</h2>
           <p>
-            Si tenés una <strong>estética</strong>, <strong>barbería</strong>,
-            <strong>gimnasio</strong> o <strong>cualquier negocio</strong> y querés
-            una web que te haga ver mejor y te genere más consultas, escribime.
+            Contame qué tipo de negocio tenés, qué necesitás mostrar y qué objetivo querés lograr.
+            Con esa información te preparo una propuesta clara y profesional.
           </p>
 
           <div class="contact__actions">
@@ -452,9 +393,9 @@
               class="btn btn--primary"
               target="_blank"
               rel="noopener"
-              href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20web%20para%20mi%20negocio.%20%C2%BFPueden%20pasarme%20info%20y%20ejemplos%3F"
+              href="https://wa.me/541128074105?text=Hola%20Vigolo%20Web%20Studio%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional.%20%C2%BFPueden%20pasarme%20info%3F"
             >
-              WhatsApp: +54 11 2807 4105
+              Escribir por WhatsApp
             </a>
 
             <a class="btn btn--secondary" href="mailto:vigolomarketing@gmail.com">
@@ -469,7 +410,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <span>© <span id="year"></span> Vigolo Web Studio</span>
-      <span class="muted">Webs orientadas a resultados</span>
+      <span class="muted">Diseño web profesional</span>
     </div>
   </footer>
 
