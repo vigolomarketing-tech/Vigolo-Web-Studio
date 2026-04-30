@@ -819,3 +819,26 @@ a {
     padding: 28px 22px;
   }
 }
+@media (max-width: 560px) {
+  .project-card {
+    justify-content: flex-start;
+    min-height: auto;
+    padding-top: 96px;
+  }
+
+  .project-card__top {
+    top: 22px;
+    left: 22px;
+    right: 22px;
+  }
+
+  .project-card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+  }
+
+  .project-card p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
