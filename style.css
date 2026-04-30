@@ -436,9 +436,6 @@ a {
 .project-card:hover {
   transform: translateY(-6px);
   border-color: rgba(118, 186, 255, 0.34);
-  background:
-    radial-gradient(circle at 85% 20%, rgba(118, 186, 255, 0.22), transparent 30%),
-    linear-gradient(180deg, rgba(255,255,255,0.085), rgba(255,255,255,0.04));
 }
 
 .project-card__top {
@@ -735,41 +732,6 @@ a {
     padding: 76px 0;
   }
 
-  .hero h1 {
-    font-size: 2.55rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1rem;
-  }
-
-  .btn,
-  .btn--nav {
-    width: 100%;
-  }
-
-  .hero__actions,
-  .contact__actions {
-    flex-direction: column;
-  }
-
-  .visual-card__body,
-  .project-card,
-  .service-card,
-  .step {
-    padding: 24px;
-  }
-
-  .split-clean,
-  .contact__card {
-    padding: 28px 22px;
-  }
-
-  .visual-card {
-    min-height: 380px;
-  }
-} 
- @media (max-width: 560px) {
   .nav {
     gap: 12px;
   }
@@ -812,13 +774,27 @@ a {
 
   .hero__subtitle {
     margin-top: 18px;
+    font-size: 1rem;
+  }
+
+  .btn,
+  .btn--nav {
+    width: 100%;
+  }
+
+  .hero__actions,
+  .contact__actions {
+    flex-direction: column;
   }
 
   .visual-card {
     min-height: auto;
   }
 
-  .visual-card__body {
+  .visual-card__body,
+  .project-card,
+  .service-card,
+  .step {
     padding: 24px;
   }
 
@@ -836,5 +812,10 @@ a {
 
   .project-card {
     min-height: 240px;
+  }
+
+  .split-clean,
+  .contact__card {
+    padding: 28px 22px;
   }
 }
