@@ -1,1 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Vigolo ECOMMERCE DEMO | Demo tienda online</title>
+
+  <meta
+    name="description"
+    content="Demo profesional de tienda online desarrollada por Vigolo Web Studio."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo__mark">V</span>
+        <div>
+          <strong>Vigolo</strong>
+          <small>ECOMMERCE DEMO</small>
+        </div>
+      </a>
+
+      <nav class="nav__menu">
+        <a href="#productos">Productos</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#contacto">Contacto</a>
+        <button class="cart-button" id="openCart">
+          🛒 Carrito <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">Demo ecommerce • Catálogo online • Carrito visual</p>
+
+          <h1>
+            Una tienda online profesional para
+            <span>vender tus productos</span>
+          </h1>
+
+          <p>
+            Demo adaptable para ferreterías, indumentaria, tecnología, accesorios,
+            cosmética, bazar y cualquier negocio que quiera vender online.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#productos" class="btn btn--primary">Ver productos</a>
+            <a
+              target="_blank"
+              rel="noopener"
+              class="btn btn--secondary"
+              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20una%20tienda%20online%20como%20esta.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
+            >
+              Quiero una tienda así
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div>
+              <strong>30+</strong>
+              <span>productos demo</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>responsive</span>
+            </div>
+            <div>
+              <strong>Online</strong>
+              <span>lista para adaptar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__panel">
+          <div class="store-preview">
+            <div class="store-preview__top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="store-preview__body">
+              <div class="store-banner">
+                <span>NUEVA TIENDA</span>
+                <h3>Ecommerce profesional</h3>
+                <p>Catálogo • Carrito • Categorías • Consultas</p>
+              </div>
+
+              <div class="mini-products">
+                <div class="mini-card">
+                  <div class="mini-image">Producto</div>
+                  <h4>Producto 01</h4>
+                  <span>$24.999</span>
+                </div>
+
+                <div class="mini-card">
+                  <div class="mini-image">Producto</div>
+                  <h4>Producto 02</h4>
+                  <span>$18.500</span>
+                </div>
+
+                <div class="mini-card">
+                  <div class="mini-image">Producto</div>
+                  <h4>Producto 03</h4>
+                  <span>$42.000</span>
+                </div>
+
+                <div class="mini-card">
+                  <div class="mini-image">Producto</div>
+                  <h4>Producto 04</h4>
+                  <span>$12.999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section id="categorias" class="section section--compact">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Categorías</p>
+          <h2>Catálogo preparado para distintos rubros</h2>
+          <p>
+            La estructura se puede adaptar a productos, marcas, medidas, modelos,
+            colores, talles o cualquier división que necesite tu negocio.
+          </p>
+        </div>
+
+        <div class="categories">
+          <button class="category active" data-category="todos">Todos</button>
+          <button class="category" data-category="herramientas">Herramientas</button>
+          <button class="category" data-category="indumentaria">Indumentaria</button>
+          <button class="category" data-category="tecnologia">Tecnología</button>
+          <button class="category" data-category="accesorios">Accesorios</button>
+          <button class="category" data-category="hogar">Hogar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section">
+      <div class="container">
+        <div class="products-header">
+          <div>
+            <p class="eyebrow">Productos</p>
+            <h2>Productos destacados</h2>
+          </div>
+
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Buscar producto, marca o categoría..."
+            />
+          </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="benefits-grid">
+          <article class="benefit">
+            <span>01</span>
+            <h3>Catálogo organizado</h3>
+            <p>Productos divididos por categorías, marcas o tipos para que el cliente encuentre rápido lo que busca.</p>
+          </article>
+
+          <article class="benefit">
+            <span>02</span>
+            <h3>Carrito visual</h3>
+            <p>El cliente puede agregar productos y ver un resumen claro antes de consultar o comprar.</p>
+          </article>
+
+          <article class="benefit">
+            <span>03</span>
+            <h3>Adaptable a tu negocio</h3>
+            <p>La tienda se personaliza con colores, logo, productos, precios y forma de contacto o venta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <div class="contact__card">
+          <p class="eyebrow">Vigolo Web Studio</p>
+          <h2>¿Querés una tienda online como esta?</h2>
+          <p>
+            Esta demo se puede adaptar a tu negocio con tus productos, categorías,
+            colores, marca, carrito, WhatsApp, pagos online y envíos.
+          </p>
+
+          <a
+            target="_blank"
+            rel="noopener"
+            class="btn btn--primary"
+            href="https://wa.me/541128074105?text=Hola%2C%20vi%20la%20demo%20de%20ecommerce%20y%20quiero%20una%20tienda%20online%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
+          >
+            Cotizar mi tienda online
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CARRITO -->
+  <aside class="cart" id="cart">
+    <div class="cart__header">
+      <h3>Carrito</h3>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div class="cart__items" id="cartItems">
+      <p class="cart__empty">Todavía no agregaste productos.</p>
+    </div>
+
+    <div class="cart__footer">
+      <div class="cart__total">
+        <span>Total estimado</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+
+      <a
+        class="btn btn--primary btn--full"
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/541128074105?text=Hola%2C%20quiero%20consultar%20por%20los%20productos%20del%20carrito."
+      >
+        Consultar por WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Vigolo Web Studio</span>
+      <span>Demo ecommerce profesional</span>
+    </div>
+  </footer>
+
+  <script>
+    const products = [
+      { id: 1, name: "Producto Premium 01", brand: "Marca Alpha", category: "herramientas", price: 18500 },
+      { id: 2, name: "Producto Premium 02", brand: "Marca Beta", category: "herramientas", price: 22400 },
+      { id: 3, name: "Producto Premium 03", brand: "Marca Gamma", category: "herramientas", price: 31900 },
+      { id: 4, name: "Producto Premium 04", brand: "Marca Delta", category: "herramientas", price: 15800 },
+      { id: 5, name: "Producto Premium 05", brand: "Marca Alpha", category: "herramientas", price: 27600 },
+      { id: 6, name: "Producto Premium 06", brand: "Marca Beta", category: "herramientas", price: 33500 },
+
+      { id: 7, name: "Producto Premium 07", brand: "Marca Urban", category: "indumentaria", price: 12900 },
+      { id: 8, name: "Producto Premium 08", brand: "Marca Urban", category: "indumentaria", price: 14900 },
+      { id: 9, name: "Producto Premium 09", brand: "Marca Sport", category: "indumentaria", price: 19900 },
+      { id: 10, name: "Producto Premium 10", brand: "Marca Sport", category: "indumentaria", price: 21500 },
+      { id: 11, name: "Producto Premium 11", brand: "Marca Basic", category: "indumentaria", price: 9800 },
+      { id: 12, name: "Producto Premium 12", brand: "Marca Basic", category: "indumentaria", price: 11200 },
+
+      { id: 13, name: "Producto Premium 13", brand: "Tech One", category: "tecnologia", price: 59900 },
+      { id: 14, name: "Producto Premium 14", brand: "Tech One", category: "tecnologia", price: 73900 },
+      { id: 15, name: "Producto Premium 15", brand: "Smart Pro", category: "tecnologia", price: 84900 },
+      { id: 16, name: "Producto Premium 16", brand: "Smart Pro", category: "tecnologia", price: 45900 },
+      { id: 17, name: "Producto Premium 17", brand: "Digital Max", category: "tecnologia", price: 38900 },
+      { id: 18, name: "Producto Premium 18", brand: "Digital Max", category: "tecnologia", price: 99000 },
+
+      { id: 19, name: "Producto Premium 19", brand: "Accesorios Pro", category: "accesorios", price: 7900 },
+      { id: 20, name: "Producto Premium 20", brand: "Accesorios Pro", category: "accesorios", price: 8900 },
+      { id: 21, name: "Producto Premium 21", brand: "Plus Store", category: "accesorios", price: 12500 },
+      { id: 22, name: "Producto Premium 22", brand: "Plus Store", category: "accesorios", price: 16800 },
+      { id: 23, name: "Producto Premium 23", brand: "Select", category: "accesorios", price: 5400 },
+      { id: 24, name: "Producto Premium 24", brand: "Select", category: "accesorios", price: 6900 },
+
+      { id: 25, name: "Producto Premium 25", brand: "Home Line", category: "hogar", price: 24900 },
+      { id: 26, name: "Producto Premium 26", brand: "Home Line", category: "hogar", price: 28900 },
+      { id: 27, name: "Producto Premium 27", brand: "Deco Max", category: "hogar", price: 34900 },
+      { id: 28, name: "Producto Premium 28", brand: "Deco Max", category: "hogar", price: 39900 },
+      { id: 29, name: "Producto Premium 29", brand: "Casa Pro", category: "hogar", price: 18900 },
+      { id: 30, name: "Producto Premium 30", brand: "Casa Pro", category: "hogar", price: 21900 }
+    ];
+
+    const productsGrid = document.getElementById("productsGrid");
+    const searchInput = document.getElementById("searchInput");
+    const categoryButtons = document.querySelectorAll(".category");
+    const cart = document.getElementById("cart");
+    const overlay = document.getElementById("overlay");
+    const openCart = document.getElementById("openCart");
+    const closeCart = document.getElementById("closeCart");
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("cartTotal");
+
+    let selectedCategory = "todos";
+    let cartProducts = [];
+
+    function formatPrice(price) {
+      return "$" + price.toLocaleString("es-AR");
+    }
+
+    function renderProducts() {
+      const searchValue = searchInput.value.toLowerCase();
+
+      const filtered = products.filter(product => {
+        const matchesCategory =
+          selectedCategory === "todos" || product.category === selectedCategory;
+
+        const matchesSearch =
+          product.name.toLowerCase().includes(searchValue) ||
+          product.brand.toLowerCase().includes(searchValue) ||
+          product.category.toLowerCase().includes(searchValue);
+
+        return matchesCategory && matchesSearch;
+      });
+
+      productsGrid.innerHTML = filtered.map(product => `
+        <article class="product-card">
+          <div class="product-card__image">
+            <span>Producto</span>
+          </div>
+
+          <div class="product-card__content">
+            <div class="product-card__meta">
+              <span>${product.category}</span>
+              <small>${product.brand}</small>
+            </div>
+
+            <h3>${product.name}</h3>
+            <p>Producto demo adaptable a cualquier rubro, marca o categoría.</p>
+
+            <div class="product-card__bottom">
+              <strong>${formatPrice(product.price)}</strong>
+              <button onclick="addToCart(${product.id})">Agregar</button>
+            </div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function addToCart(id) {
+      const product = products.find(item => item.id === id);
+      cartProducts.push(product);
+      updateCart();
+      openCartPanel();
+    }
+
+    function updateCart() {
+      cartCount.textContent = cartProducts.length;
+
+      if (cartProducts.length === 0) {
+        cartItems.innerHTML = `<p class="cart__empty">Todavía no agregaste productos.</p>`;
+        cartTotal.textContent = "$0";
+        return;
+      }
+
+      cartItems.innerHTML = cartProducts.map((product, index) => `
+        <div class="cart-item">
+          <div>
+            <strong>${product.name}</strong>
+            <span>${product.brand}</span>
+          </div>
+          <button onclick="removeFromCart(${index})">✕</button>
+        </div>
+      `).join("");
+
+      const total = cartProducts.reduce((sum, product) => sum + product.price, 0);
+      cartTotal.textContent = formatPrice(total);
+    }
+
+    function removeFromCart(index) {
+      cartProducts.splice(index, 1);
+      updateCart();
+    }
+
+    function openCartPanel() {
+      cart.classList.add("active");
+      overlay.classList.add("active");
+    }
+
+    function closeCartPanel() {
+      cart.classList.remove("active");
+      overlay.classList.remove("active");
+    }
+
+    categoryButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        categoryButtons.forEach(btn => btn.classList.remove("active"));
+        button.classList.add("active");
+        selectedCategory = button.dataset.category;
+        renderProducts();
+      });
+    });
+
+    searchInput.addEventListener("input", renderProducts);
+    openCart.addEventListener("click", openCartPanel);
+    closeCart.addEventListener("click", closeCartPanel);
+    overlay.addEventListener("click", closeCartPanel);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    renderProducts();
+  </script>
+</body>
+</html>
