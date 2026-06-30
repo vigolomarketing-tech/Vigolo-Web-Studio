@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon inline (no requiere archivo extra) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2376baff'/><text y='.88em' font-size='78' font-family='Arial,sans-serif' font-weight='900' fill='%2306101d' x='14'>V</text></svg>">
+
   <!-- SEO primario -->
   <title>Vigolo Web Studio | Diseño web profesional para negocios</title>
   <meta name="description" content="Diseñamos páginas web profesionales, modernas y orientadas a vender para negocios, marcas y emprendimientos. Responsive, rápidas y pensadas para generar consultas reales." />
@@ -22,6 +25,12 @@
   <meta name="twitter:title" content="Vigolo Web Studio | Diseño web profesional" />
   <meta name="twitter:description" content="Webs profesionales para negocios que quieren verse mejor online y generar más clientes." />
 
+  <!-- Colores para mobile browser UI -->
+  <meta name="theme-color" content="#05070c" />
+
+  <!-- Preload imagen destacada del portfolio -->
+  <link rel="preload" as="image" href="./img/gym.jpg" />
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +40,9 @@
 </head>
 
 <body>
+
+  <!-- Skip link para accesibilidad con teclado -->
+  <a class="skip-link" href="#main-content">Ir al contenido principal</a>
 
   <!-- ═══════════════════════════════════════════ HEADER -->
   <header class="header" role="banner">
@@ -64,7 +76,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
 
     <!-- ═══════════════════════════════════════════ HERO -->
     <section class="hero" aria-label="Propuesta de valor principal">
@@ -221,6 +233,25 @@
           <p>Proyectos desarrollados para distintos rubros. Cada web transmite profesionalismo, genera confianza y convierte visitas en consultas.</p>
         </div>
 
+        <!--
+          ╔══════════════════════════════════════════════════════╗
+          ║  PORTFOLIO — Cómo agregar un nuevo proyecto          ║
+          ╠══════════════════════════════════════════════════════╣
+          ║  Copiá uno de los bloques <a class="project-card">  ║
+          ║  y cambiá: href, aria-label, badges, h3, p, link.   ║
+          ║                                                      ║
+          ║  Para agregar una card CON IMAGEN (tipo Fitness):    ║
+          ║  - Usá la estructura de project-card--featured       ║
+          ║  - Guardá la imagen en ./img/nombre.jpg              ║
+          ║  - Agregá la clase project-card__image--nombre       ║
+          ║  - En style.css:                                     ║
+          ║    .project-card__image--nombre {                    ║
+          ║      background-image: url('./img/nombre.jpg');      ║
+          ║    }                                                  ║
+          ║                                                      ║
+          ║  Badges: "Proyecto" = real | "Demo" = demo           ║
+          ╚══════════════════════════════════════════════════════╝
+        -->
         <div class="portfolio-grid">
 
           <!-- PROYECTO DESTACADO: Fitness Training Zone -->
@@ -479,6 +510,52 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════ TESTIMONIOS
+         SECCIÓN LISTA PARA ACTIVAR — quitá los comentarios cuando tengas testimonios reales.
+         Agregá los datos del cliente en cada .testimonial-card.
+    ═══════════════════════════════════════════════════════════
+    <section id="testimonios" class="section" aria-labelledby="testimonios-title">
+      <div class="container">
+        <div class="section__head fade-up">
+          <p class="eyebrow">Testimonios</p>
+          <h2 id="testimonios-title">Lo que dicen nuestros clientes</h2>
+          <p>Resultados reales de negocios que confiaron en Vigolo Web Studio.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">"Descripción del cliente sobre cómo mejoró su negocio con la web. Breve, directo, con resultado concreto."</p>
+            <div class="testimonial-card__author">
+              <strong>Nombre del Cliente</strong>
+              <span>Rubro · Ciudad</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">"Otro testimonio real con resultado medible. Ej: 'Desde que lancé la web recibo 3 consultas por semana por WhatsApp.'"</p>
+            <div class="testimonial-card__author">
+              <strong>Nombre del Cliente</strong>
+              <span>Rubro · Ciudad</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-up">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">★★★★★</div>
+            <p class="testimonial-card__text">"Tercer testimonio. Podés agregar más cards siguiendo esta estructura. Mínimo 3 para que la sección tenga peso."</p>
+            <div class="testimonial-card__author">
+              <strong>Charly</strong>
+              <span>Fitness Training Zone · Buenos Aires</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    -->
+
     <!-- ═══════════════════════════════════════════ FAQ -->
     <section id="faq" class="section" aria-labelledby="faq-title">
       <div class="container">
@@ -617,12 +694,20 @@
   </footer>
 
   <script>
-    // Año en footer
+    // ── Año en footer ────────────────────────────────────────────────
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Hamburger menu
+    // ── Hamburger menu ────────────────────────────────────────────────
     const toggle = document.querySelector('.nav__toggle');
-    const menu = document.querySelector('.nav__menu');
+    const menu   = document.querySelector('.nav__menu');
+
+    function closeMenu() {
+      menu.classList.remove('nav__menu--open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('nav__toggle--open');
+      document.body.classList.remove('no-scroll');
+    }
+
     if (toggle && menu) {
       toggle.addEventListener('click', function () {
         const isOpen = menu.classList.toggle('nav__menu--open');
@@ -630,17 +715,17 @@
         this.classList.toggle('nav__toggle--open', isOpen);
         document.body.classList.toggle('no-scroll', isOpen);
       });
-      menu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          menu.classList.remove('nav__menu--open');
-          toggle.setAttribute('aria-expanded', 'false');
-          toggle.classList.remove('nav__toggle--open');
-          document.body.classList.remove('no-scroll');
-        });
+
+      // Cerrar al hacer click en cualquier link del menú
+      menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+      // Cerrar si el viewport supera el breakpoint mobile
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 860) closeMenu();
       });
     }
 
-    // Scroll reveal
+    // ── Scroll reveal ─────────────────────────────────────────────────
     const revealObserver = new IntersectionObserver(
       entries => entries.forEach(e => {
         if (e.isIntersecting) {
@@ -652,7 +737,15 @@
     );
     document.querySelectorAll('.fade-up').forEach(el => revealObserver.observe(el));
 
-    // FAQ chevron via CSS (open attribute auto-managed by browser details/summary)
+    // ── Stagger delay en grids de cards ──────────────────────────────
+    // Aplica delay escalonado a cards dentro de grids para entrada más premium
+    document.querySelectorAll('.portfolio-grid, .services-grid, .steps, .benefits-grid').forEach(grid => {
+      grid.querySelectorAll('.project-card, .service-card, .step, .benefit-item').forEach((card, i) => {
+        card.style.transitionDelay = (i * 60) + 'ms';
+      });
+    });
+
+    // ── FAQ: el chevron gira via CSS [open] — no requiere JS adicional ──
   </script>
 
 </body>

@@ -39,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* compensate for sticky header on anchor links */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -370,6 +371,7 @@ ul    { list-style: none; }
 }
 
 .accent {
+  color: var(--primary); /* fallback for unsupported browsers */
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1173,6 +1175,79 @@ ul    { list-style: none; }
 .footer__nav a:hover { color: var(--text-soft); }
 
 .footer__copy { font-size: 0.82rem; }
+
+/* ── SKIP LINK (accesibilidad) ───────────────── */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  padding: 10px 18px;
+  background: var(--primary);
+  color: #06101d;
+  font-weight: 700;
+  border-radius: 0 0 12px 12px;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus { top: 0; }
+
+/* ── TESTIMONIALS (descomentá la sección en HTML cuando tengas datos) ── */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.testimonial-card {
+  padding: 32px 28px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-blue);
+}
+
+.testimonial-card__stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.testimonial-card__text {
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  line-height: 1.7;
+  flex: 1;
+  font-style: italic;
+}
+
+.testimonial-card__author strong {
+  display: block;
+  font-size: 0.94rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+
+.testimonial-card__author span {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 860px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
 
 /* ── SCROLL REVEAL ───────────────────────────── */
 
