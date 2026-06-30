@@ -28,9 +28,6 @@
   <!-- Colores para mobile browser UI -->
   <meta name="theme-color" content="#05070c" />
 
-  <!-- Preload imagen destacada del portfolio -->
-  <link rel="preload" as="image" href="./img/gym.jpg" />
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -238,16 +235,12 @@
           ║  PORTFOLIO — Cómo agregar un nuevo proyecto          ║
           ╠══════════════════════════════════════════════════════╣
           ║  Copiá uno de los bloques <a class="project-card">  ║
-          ║  y cambiá: href, aria-label, badges, h3, p, link.   ║
+          ║  y cambiá: href, aria-label, num, badges, h3, p.    ║
           ║                                                      ║
-          ║  Para agregar una card CON IMAGEN (tipo Fitness):    ║
-          ║  - Usá la estructura de project-card--featured       ║
-          ║  - Guardá la imagen en ./img/nombre.jpg              ║
-          ║  - Agregá la clase project-card__image--nombre       ║
-          ║  - En style.css:                                     ║
-          ║    .project-card__image--nombre {                    ║
-          ║      background-image: url('./img/nombre.jpg');      ║
-          ║    }                                                  ║
+          ║  Para un proyecto DESTACADO:                         ║
+          ║  - Agregá la clase project-card--featured            ║
+          ║  - Usá badge--featured en el primer badge            ║
+          ║  - El número decorativo es el orden (01, 02...)      ║
           ║                                                      ║
           ║  Badges: "Proyecto" = real | "Demo" = demo           ║
           ╚══════════════════════════════════════════════════════╝
@@ -262,77 +255,93 @@
             rel="noopener noreferrer"
             aria-label="Ver proyecto Fitness Training Zone"
           >
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">01</span>
+            <div class="project-card__badges">
               <span class="badge badge--featured">Proyecto destacado</span>
-              <small class="badge">Fitness · Deportivo</small>
+              <span class="badge">Fitness · Deportivo</span>
             </div>
-            <div class="project-card__image project-card__image--fitness">
-              <div class="project-card__overlay"></div>
-            </div>
-            <div class="project-card__content">
+            <div class="project-card__info">
               <h3>Fitness Training Zone</h3>
               <p>Web profesional para entrenador personal: planes, servicios, contacto directo por WhatsApp y presencia digital completa.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
             </div>
+            <span class="project-card__link">Ver sitio en vivo →</span>
           </a>
 
           <a class="project-card" href="https://elizarddeco.com" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Elizard Deco">
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">02</span>
+            <div class="project-card__badges">
               <span class="badge">Proyecto</span>
-              <small class="badge">Decoración</small>
+              <span class="badge">Decoración</span>
             </div>
-            <h3>Elizard Deco</h3>
-            <p>Web profesional para marca de decoración, enfocada en mostrar productos y generar confianza en el negocio.</p>
+            <div class="project-card__info">
+              <h3>Elizard Deco</h3>
+              <p>Web profesional para marca de decoración, enfocada en mostrar productos y generar confianza en el negocio.</p>
+            </div>
             <span class="project-card__link">Ver proyecto →</span>
           </a>
 
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-electricidad/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Electricidad">
-            <div class="project-card__top">
+          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-electricidad/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Electricidad">
+            <span class="project-card__num" aria-hidden="true">03</span>
+            <div class="project-card__badges">
               <span class="badge">Proyecto</span>
-              <small class="badge">Servicios</small>
+              <span class="badge">Servicios</span>
             </div>
-            <h3>Electricidad</h3>
-            <p>Sitio profesional para servicios domiciliarios, industriales y matriculados.</p>
+            <div class="project-card__info">
+              <h3>Electricidad</h3>
+              <p>Sitio profesional para servicios domiciliarios, industriales y matriculados.</p>
+            </div>
             <span class="project-card__link">Ver proyecto →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/Metales-sur/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Metales Sur">
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">04</span>
+            <div class="project-card__badges">
               <span class="badge">Proyecto</span>
-              <small class="badge">Catálogo</small>
+              <span class="badge">Catálogo</span>
             </div>
-            <h3>Metales Sur</h3>
-            <p>Catálogo digital para productos, categorías, consultas y presencia de marca.</p>
+            <div class="project-card__info">
+              <h3>Metales Sur</h3>
+              <p>Catálogo digital para productos, categorías, consultas y presencia de marca.</p>
+            </div>
             <span class="project-card__link">Ver proyecto →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Estética / Salón">
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">05</span>
+            <div class="project-card__badges">
               <span class="badge">Demo</span>
-              <small class="badge">Estética</small>
+              <span class="badge">Estética</span>
             </div>
-            <h3>Estética / Salón</h3>
-            <p>Web visual y elegante preparada para mostrar servicios, fotos y contacto.</p>
+            <div class="project-card__info">
+              <h3>Estética / Salón</h3>
+              <p>Web visual y elegante preparada para mostrar servicios, fotos y contacto.</p>
+            </div>
             <span class="project-card__link">Ver demo →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Barbería">
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">06</span>
+            <div class="project-card__badges">
               <span class="badge">Demo</span>
-              <small class="badge">Barbería</small>
+              <span class="badge">Barbería</span>
             </div>
-            <h3>Barbería</h3>
-            <p>Estética premium, estructura clara y presencia profesional para el negocio.</p>
+            <div class="project-card__info">
+              <h3>Barbería</h3>
+              <p>Estética premium, estructura clara y presencia profesional para el negocio.</p>
+            </div>
             <span class="project-card__link">Ver demo →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Gimnasio / Fitness">
-            <div class="project-card__top">
+            <span class="project-card__num" aria-hidden="true">07</span>
+            <div class="project-card__badges">
               <span class="badge">Demo</span>
-              <small class="badge">Fitness</small>
+              <span class="badge">Fitness</span>
             </div>
-            <h3>Gimnasio / Fitness</h3>
-            <p>Web pensada para comunicar planes, beneficios y propuesta del gimnasio.</p>
+            <div class="project-card__info">
+              <h3>Gimnasio / Fitness</h3>
+              <p>Web pensada para comunicar planes, beneficios y propuesta del gimnasio.</p>
+            </div>
             <span class="project-card__link">Ver demo →</span>
           </a>
 
