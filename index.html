@@ -231,23 +231,25 @@
         </div>
 
         <!--
-          ╔══════════════════════════════════════════════════════╗
-          ║  PORTFOLIO — Cómo agregar un nuevo proyecto          ║
-          ╠══════════════════════════════════════════════════════╣
-          ║  Copiá uno de los bloques <a class="project-card">  ║
-          ║  y cambiá: href, aria-label, num, badges, h3, p.    ║
-          ║                                                      ║
-          ║  Para un proyecto DESTACADO:                         ║
-          ║  - Agregá la clase project-card--featured            ║
-          ║  - Usá badge--featured en el primer badge            ║
-          ║  - El número decorativo es el orden (01, 02...)      ║
-          ║                                                      ║
-          ║  Badges: "Proyecto" = real | "Demo" = demo           ║
-          ╚══════════════════════════════════════════════════════╝
+          ╔══════════════════════════════════════════════════════════╗
+          ║  PORTFOLIO — Cómo agregar un proyecto                     ║
+          ╠══════════════════════════════════════════════════════════╣
+          ║  Copiá un bloque <a class="project-card"> y cambiá:      ║
+          ║  href, aria-label, la imagen (src + alt), badges, h3, p. ║
+          ║                                                          ║
+          ║  Proyecto DESTACADO (ancho completo, imagen grande):     ║
+          ║  - Usá la clase project-card--featured                   ║
+          ║  - Poné badge--featured en el primer badge               ║
+          ║                                                          ║
+          ║  La imagen usa loading="lazy" + onerror que oculta la    ║
+          ║  foto rota y deja un degradado de marca de respaldo.     ║
+          ║  Badges: "Proyecto" = real · "Demo" = demo               ║
+          ╚══════════════════════════════════════════════════════════╝
         -->
-        <div class="portfolio-grid">
 
-          <!-- PROYECTO DESTACADO: Fitness Training Zone -->
+        <!-- PROYECTOS DESTACADOS (ancho completo) -->
+        <div class="portfolio-featured">
+
           <a
             class="project-card project-card--featured"
             href="https://fitnesstrainingzone.com"
@@ -255,94 +257,166 @@
             rel="noopener noreferrer"
             aria-label="Ver proyecto Fitness Training Zone"
           >
-            <span class="project-card__num" aria-hidden="true">01</span>
-            <div class="project-card__badges">
-              <span class="badge badge--featured">Proyecto destacado</span>
-              <span class="badge">Fitness · Deportivo</span>
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
+                   alt="Vista del sitio Fitness Training Zone" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
             </div>
-            <div class="project-card__info">
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge badge--featured">Proyecto destacado</span>
+                <span class="badge">Fitness · Entrenador personal</span>
+              </div>
               <h3>Fitness Training Zone</h3>
-              <p>Web profesional para entrenador personal: planes, servicios, contacto directo por WhatsApp y presencia digital completa.</p>
+              <p>Web profesional para entrenador personal: planes, servicios y contacto directo por WhatsApp. Una presencia digital que transmite autoridad y convierte visitas en consultas.</p>
+              <span class="project-card__link">Ver sitio en vivo →</span>
             </div>
-            <span class="project-card__link">Ver sitio en vivo →</span>
           </a>
 
+          <a
+            class="project-card project-card--featured project-card--reverse"
+            href="https://vigolomarketing-tech.github.io/industrial-cdm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver proyecto Industrial CDM"
+          >
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://vigolomarketing-tech.github.io/industrial-cdm/assets/hero-laser-machine.png"
+                   alt="Vista del sitio Industrial CDM — servicio técnico de máquinas láser" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge badge--featured">Proyecto destacado</span>
+                <span class="badge">Industrial · B2B</span>
+              </div>
+              <h3>Industrial CDM</h3>
+              <p>Sitio corporativo para servicio técnico de máquinas láser industriales: mantenimiento, parametrización y capacitación. Diseño sobrio, técnico y de alto nivel para un rubro exigente.</p>
+              <span class="project-card__link">Ver sitio en vivo →</span>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- RESTO DE PROYECTOS -->
+        <div class="portfolio-grid">
+
           <a class="project-card" href="https://elizarddeco.com" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Elizard Deco">
-            <span class="project-card__num" aria-hidden="true">02</span>
-            <div class="project-card__badges">
-              <span class="badge">Proyecto</span>
-              <span class="badge">Decoración</span>
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista del sitio Elizard Deco" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
             </div>
-            <div class="project-card__info">
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Proyecto</span>
+                <span class="badge">Decoración</span>
+              </div>
               <h3>Elizard Deco</h3>
-              <p>Web profesional para marca de decoración, enfocada en mostrar productos y generar confianza en el negocio.</p>
+              <p>Web para marca de decoración: catálogo visual, identidad cuidada y confianza para vender.</p>
+              <span class="project-card__link">Ver sitio en vivo →</span>
             </div>
-            <span class="project-card__link">Ver proyecto →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-electricidad/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Electricidad">
-            <span class="project-card__num" aria-hidden="true">03</span>
-            <div class="project-card__badges">
-              <span class="badge">Proyecto</span>
-              <span class="badge">Servicios</span>
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista del sitio de Electricidad" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
             </div>
-            <div class="project-card__info">
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Proyecto</span>
+                <span class="badge">Servicios</span>
+              </div>
               <h3>Electricidad</h3>
               <p>Sitio profesional para servicios domiciliarios, industriales y matriculados.</p>
+              <span class="project-card__link">Ver sitio en vivo →</span>
             </div>
-            <span class="project-card__link">Ver proyecto →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/Metales-sur/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Metales Sur">
-            <span class="project-card__num" aria-hidden="true">04</span>
-            <div class="project-card__badges">
-              <span class="badge">Proyecto</span>
-              <span class="badge">Catálogo</span>
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista del sitio Metales Sur" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
             </div>
-            <div class="project-card__info">
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Proyecto</span>
+                <span class="badge">Catálogo</span>
+              </div>
               <h3>Metales Sur</h3>
               <p>Catálogo digital para productos, categorías, consultas y presencia de marca.</p>
+              <span class="project-card__link">Ver sitio en vivo →</span>
             </div>
-            <span class="project-card__link">Ver proyecto →</span>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Estética / Salón">
-            <span class="project-card__num" aria-hidden="true">05</span>
-            <div class="project-card__badges">
-              <span class="badge">Demo</span>
-              <span class="badge">Estética</span>
-            </div>
-            <div class="project-card__info">
-              <h3>Estética / Salón</h3>
-              <p>Web visual y elegante preparada para mostrar servicios, fotos y contacto.</p>
-            </div>
-            <span class="project-card__link">Ver demo →</span>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Barbería">
-            <span class="project-card__num" aria-hidden="true">06</span>
-            <div class="project-card__badges">
-              <span class="badge">Demo</span>
-              <span class="badge">Barbería</span>
-            </div>
-            <div class="project-card__info">
-              <h3>Barbería</h3>
-              <p>Estética premium, estructura clara y presencia profesional para el negocio.</p>
-            </div>
-            <span class="project-card__link">Ver demo →</span>
           </a>
 
           <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Gimnasio / Fitness">
-            <span class="project-card__num" aria-hidden="true">07</span>
-            <div class="project-card__badges">
-              <span class="badge">Demo</span>
-              <span class="badge">Fitness</span>
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista de la demo de gimnasio PulseFit" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live project-card__live--demo">Demo</span>
             </div>
-            <div class="project-card__info">
-              <h3>Gimnasio / Fitness</h3>
-              <p>Web pensada para comunicar planes, beneficios y propuesta del gimnasio.</p>
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Demo</span>
+                <span class="badge">Fitness</span>
+              </div>
+              <h3>Gimnasio · PulseFit</h3>
+              <p>Plataforma fitness con planes, reservas online, testimonios, galería y QR de acceso.</p>
+              <span class="project-card__link">Ver demo →</span>
             </div>
-            <span class="project-card__link">Ver demo →</span>
+          </a>
+
+          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Barbería">
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista de la demo de barbería Roble & Navaja" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live project-card__live--demo">Demo</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Demo</span>
+                <span class="badge">Barbería</span>
+              </div>
+              <h3>Barbería · Roble &amp; Navaja</h3>
+              <p>Demo premium negro y dorado: turnos online, servicios, equipo, galería y reseñas.</p>
+              <span class="project-card__link">Ver demo →</span>
+            </div>
+          </a>
+
+          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Estética / Salón">
+            <div class="project-card__media">
+              <img loading="lazy" onerror="this.style.display='none'"
+                   src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80"
+                   alt="Vista de la demo de estética Lumière" />
+              <span class="project-card__frame" aria-hidden="true"></span>
+              <span class="project-card__live project-card__live--demo">Demo</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__badges">
+                <span class="badge">Demo</span>
+                <span class="badge">Estética</span>
+              </div>
+              <h3>Estética · Lumière</h3>
+              <p>Demo elegante y luminosa: tratamientos, reserva de turnos, experiencia y galería.</p>
+              <span class="project-card__link">Ver demo →</span>
+            </div>
           </a>
 
         </div>
