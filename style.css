@@ -76,6 +76,13 @@ img   { max-width: 100%; display: block; }
 a     { color: inherit; text-decoration: none; }
 ul    { list-style: none; }
 
+/* Keyboard focus visibility (a11y) */
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
 /* ── LAYOUT ──────────────────────────────────── */
 
 .container {
