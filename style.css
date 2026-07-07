@@ -705,6 +705,24 @@ ul    { list-style: none; }
   background: linear-gradient(180deg, transparent 55%, rgba(5,7,12,0.5) 100%);
 }
 
+/* Designed brushed-steel tile (Metales Sur) */
+.project-card__media--metal {
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(125deg, rgba(255,255,255,0.09) 0%, transparent 24% 32%, rgba(255,255,255,0.06) 42%, transparent 56% 72%, rgba(255,255,255,0.05) 84%, transparent 100%),
+    repeating-linear-gradient(125deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 5px),
+    linear-gradient(135deg, #2b3037, #464e58 48%, #1d2127);
+}
+.metal-emblem {
+  width: 62px;
+  height: 62px;
+  color: rgba(233,238,244,0.82);
+  filter: drop-shadow(0 3px 8px rgba(0,0,0,0.45));
+  transition: transform 0.6s var(--ease);
+}
+.project-card:hover .metal-emblem { transform: translateY(-3px) scale(1.04); }
+
 /* "En vivo" / "Demo" pill */
 .project-card__live {
   position: absolute;
