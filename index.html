@@ -3,53 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js')</script>
 
-  <!-- Favicon inline (no requiere archivo extra) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2376baff'/><text y='.88em' font-size='78' font-family='Arial,sans-serif' font-weight='900' fill='%2306101d' x='14'>V</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
   <!-- SEO primario -->
-  <title>Vigolo Web Studio | Diseño web profesional para negocios</title>
-  <meta name="description" content="Diseñamos páginas web profesionales, modernas y orientadas a vender para negocios, marcas y emprendimientos. Responsive, rápidas y pensadas para generar consultas reales." />
+  <title>Vigolo Web Studio | Webs que venden para comercios de zona sur</title>
+  <meta name="description" content="Webs para comercios de zona sur: pedidos y consultas por WhatsApp, diseño a medida y rápidas en el celular. Mirá trabajos reales y precios." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://vigolowebstudio.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vigolowebstudio.com/" />
-  <meta property="og:title" content="Vigolo Web Studio | Diseño web profesional para negocios" />
-  <meta property="og:description" content="Webs profesionales para negocios que quieren verse mejor online y generar más clientes. Diseño moderno, responsive y orientado a conversión." />
+  <meta property="og:title" content="Vigolo Web Studio | Webs que venden para comercios de zona sur" />
+  <meta property="og:description" content="Pedidos y consultas por WhatsApp, diseño a medida y rápidas en el celular. Mirá trabajos reales y precios." />
   <meta property="og:site_name" content="Vigolo Web Studio" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://vigolowebstudio.com/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="vigolo web studio — Webs que venden para comercios de zona sur" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Vigolo Web Studio | Diseño web profesional" />
-  <meta name="twitter:description" content="Webs profesionales para negocios que quieren verse mejor online y generar más clientes." />
+  <meta name="twitter:title" content="Vigolo Web Studio | Webs que venden para comercios de zona sur" />
+  <meta name="twitter:description" content="Pedidos y consultas por WhatsApp, diseño a medida y rápidas en el celular." />
+  <meta name="twitter:image" content="https://vigolowebstudio.com/img/og.jpg" />
 
-  <!-- Colores para mobile browser UI -->
-  <meta name="theme-color" content="#05070c" />
+  <meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- Skip link para accesibilidad con teclado -->
   <a class="skip-link" href="#main-content">Ir al contenido principal</a>
 
   <!-- ═══════════════════════════════════════════ HEADER -->
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container nav">
       <a href="#" class="logo" aria-label="Vigolo Web Studio — Inicio">
-        <span class="logo__mark" aria-hidden="true">V</span>
-        <div>
-          <strong>Vigolo</strong>
-          <small>Web Studio</small>
-        </div>
+        <svg class="logo__svg" viewBox="0 0 124 40" aria-hidden="true">
+          <text class="logo__word" x="0" y="25">vigolo<tspan class="logo__dot">.</tspan></text>
+          <text class="logo__sub" x="1" y="37">web studio</text>
+        </svg>
       </a>
 
       <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
@@ -58,17 +62,18 @@
         <span></span>
       </button>
 
-      <nav class="nav__menu" id="main-nav" role="navigation" aria-label="Navegación principal">
-        <a href="#portfolio">Portfolio</a>
+      <nav class="nav__menu" id="main-nav" aria-label="Navegación principal">
+        <a href="#trabajos">Trabajos</a>
         <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
         <a href="#proceso">Proceso</a>
-        <a href="#faq">FAQ</a>
+        <a href="#preguntas">Preguntas</a>
         <a
-          class="btn btn--nav"
-          href="https://wa.me/541128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
+          class="btn btn--primary btn--sm"
+          href="https://wa.me/5491128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
           target="_blank"
           rel="noopener noreferrer"
-        >Contactar</a>
+        >Escribime</a>
       </nav>
     </div>
   </header>
@@ -76,634 +81,172 @@
   <main id="main-content">
 
     <!-- ═══════════════════════════════════════════ HERO -->
-    <section class="hero" aria-label="Propuesta de valor principal">
+    <section class="hero">
       <div class="container hero__grid">
 
-        <div class="hero__content">
-          <p class="pill">
-            <span class="pill__dot" aria-hidden="true"></span>
-            Diseño web profesional · Argentina
-          </p>
-
-          <h1>
-            Tu negocio merece una web que
-            <span class="accent">genere clientes</span>
-          </h1>
-
-          <p class="hero__subtitle">
-            Creamos páginas web modernas, rápidas y orientadas a vender — para que tu marca transmita confianza, se diferencie de la competencia y convierta visitas en consultas reales.
-          </p>
+        <div class="hero__content fade-up">
+          <p class="eyebrow">Diseño web · Zona sur, Buenos Aires</p>
+          <h1>Webs que venden para comercios de zona sur</h1>
+          <p class="hero__subtitle">Tu negocio con pedidos y consultas por WhatsApp, rápido en el celular y listo en pocas semanas.</p>
 
           <div class="hero__actions">
             <a
-              class="btn btn--primary btn--wa"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Cotizar mi web por WhatsApp"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Quiero cotizar mi web
-            </a>
-
-            <a class="btn btn--secondary" href="#portfolio">
-              Ver trabajos →
-            </a>
-          </div>
-
-          <div class="hero__stats" role="list" aria-label="Estadísticas">
-            <div class="hero__stat" role="listitem">
-              <strong>+15</strong>
-              <span>Proyectos</span>
-            </div>
-            <div class="hero__stat-divider" aria-hidden="true"></div>
-            <div class="hero__stat" role="listitem">
-              <strong>100%</strong>
-              <span>Responsive</span>
-            </div>
-            <div class="hero__stat-divider" aria-hidden="true"></div>
-            <div class="hero__stat" role="listitem">
-              <strong>&lt; 24h</strong>
-              <span>Primera respuesta</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__visual" aria-hidden="true">
-          <div class="visual-card">
-            <div class="visual-card__top">
-              <span class="dot dot--red"></span>
-              <span class="dot dot--yellow"></span>
-              <span class="dot dot--green"></span>
-              <span class="visual-card__url">vigolowebstudio.com</span>
-            </div>
-            <div class="visual-card__body">
-              <p class="visual-card__tag">Presencia digital</p>
-              <h2>Tu negocio online, claro y profesional</h2>
-              <p>Diseño, estructura y desarrollo pensados para que tus clientes entiendan rápido qué ofrecés y cómo contactarte.</p>
-
-              <div class="visual-card__items">
-                <span class="visual-card__item">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                  Imagen profesional
-                </span>
-                <span class="visual-card__item">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                  Web responsive
-                </span>
-                <span class="visual-card__item">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                  Contacto directo
-                </span>
-                <span class="visual-card__item">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-                  Carga rápida
-                </span>
-              </div>
-
-              <div class="visual-card__cta">
-                <div class="visual-card__btn-primary"></div>
-                <div class="visual-card__btn-secondary"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ BENEFITS BAR -->
-    <section class="benefits" aria-label="Beneficios clave">
-      <div class="container">
-        <div class="benefits-grid">
-
-          <div class="benefit-item">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <strong>Transmitís confianza</strong>
-              <p>Una web profesional convierte más visitas en clientes que cualquier otra estrategia.</p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div>
-              <strong>Entregamos rápido</strong>
-              <p>Proceso claro y ordenado. Sin demoras ni vueltas innecesarias.</p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-            </div>
-            <div>
-              <strong>100% responsive</strong>
-              <p>Perfecta en celular, tablet y computadora. Siempre.</p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-            </div>
-            <div>
-              <strong>Diseño a medida</strong>
-              <p>Sin plantillas genéricas. Cada web se diseña para tu rubro y objetivos.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ PORTFOLIO -->
-    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
-      <div class="container">
-        <div class="section__head fade-up">
-          <p class="eyebrow">Portfolio</p>
-          <h2 id="portfolio-title">Trabajos y proyectos reales</h2>
-          <p>Proyectos desarrollados para distintos rubros. Cada web transmite profesionalismo, genera confianza y convierte visitas en consultas.</p>
-        </div>
-
-        <!--
-          ╔══════════════════════════════════════════════════════════╗
-          ║  PORTFOLIO — Cómo agregar un proyecto                     ║
-          ╠══════════════════════════════════════════════════════════╣
-          ║  Copiá un bloque <a class="project-card"> y cambiá:      ║
-          ║  href, aria-label, la imagen (src + alt), badges, h3, p. ║
-          ║                                                          ║
-          ║  Proyecto DESTACADO (ancho completo, imagen grande):     ║
-          ║  - Usá la clase project-card--featured                   ║
-          ║  - Poné badge--featured en el primer badge               ║
-          ║                                                          ║
-          ║  La imagen usa loading="lazy" + onerror que oculta la    ║
-          ║  foto rota y deja un degradado de marca de respaldo.     ║
-          ║  Badges: "Proyecto" = real · "Demo" = demo               ║
-          ╚══════════════════════════════════════════════════════════╝
-        -->
-
-        <!-- PROYECTOS DESTACADOS (ancho completo) -->
-        <div class="portfolio-featured">
-
-          <a
-            class="project-card project-card--featured"
-            href="https://fitnesstrainingzone.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver proyecto Fitness Training Zone"
-          >
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80"
-                   alt="Vista del sitio Fitness Training Zone" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge badge--featured">Proyecto destacado</span>
-                <span class="badge">Fitness · Entrenador personal</span>
-              </div>
-              <h3>Fitness Training Zone</h3>
-              <p>Web profesional para entrenador personal: planes, servicios y contacto directo por WhatsApp. Una presencia digital que transmite autoridad y convierte visitas en consultas.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
-            </div>
-          </a>
-
-          <a
-            class="project-card project-card--featured project-card--reverse"
-            href="https://vigolomarketing-tech.github.io/industrial-cdm/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver proyecto Industrial CDM"
-          >
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://vigolomarketing-tech.github.io/industrial-cdm/assets/hero-laser-machine.png"
-                   alt="Vista del sitio Industrial CDM — servicio técnico de máquinas láser" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge badge--featured">Proyecto destacado</span>
-                <span class="badge">Industrial · B2B</span>
-              </div>
-              <h3>Industrial CDM</h3>
-              <p>Sitio corporativo para servicio técnico de máquinas láser industriales: mantenimiento, parametrización y capacitación. Diseño sobrio, técnico y de alto nivel para un rubro exigente.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
-            </div>
-          </a>
-
-        </div>
-
-        <!-- RESTO DE PROYECTOS -->
-        <div class="portfolio-grid">
-
-          <a class="project-card" href="https://elizarddeco.com" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Elizard Deco">
-            <div class="project-card__media" style="background:linear-gradient(135deg,#2b2f36,#484f59 55%,#20242b)">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://vigolomarketing-tech.github.io/vigolo-web-demos-/elizarddeco/img/render/render-2.jpg"
-                   alt="Proyecto de decoración y diseño de estructuras metálicas — Elizard Deco" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Proyecto</span>
-                <span class="badge">Decoración</span>
-              </div>
-              <h3>Elizard Deco</h3>
-              <p>Web para marca de decoración: catálogo visual, identidad cuidada y confianza para vender.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-electricidad/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Electricidad">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
-                   alt="Vista del sitio de Electricidad" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Proyecto</span>
-                <span class="badge">Servicios</span>
-              </div>
-              <h3>Electricidad</h3>
-              <p>Sitio profesional para servicios domiciliarios, industriales y matriculados.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/Metales-sur/" target="_blank" rel="noopener noreferrer" aria-label="Ver proyecto Metales Sur">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/metales-sur.jpg"
-                   alt="Portón con diseño de corte láser en chapa — proyecto Metales Sur" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live"><span class="live-dot"></span>En vivo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Proyecto</span>
-                <span class="badge">Catálogo</span>
-              </div>
-              <h3>Metales Sur</h3>
-              <p>Catálogo digital para productos, categorías, consultas y presencia de marca.</p>
-              <span class="project-card__link">Ver sitio en vivo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/clinica-dental-demo/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Clínica Dental">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/clinica-dental.jpg"
-                   alt="Consultorio odontológico moderno con equipamiento digital — demo Lumina Dental Studio" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Odontología</span>
-              </div>
-              <h3>Odontología · Lumina Dental Studio</h3>
-              <p>Web para clínicas dentales: tratamientos, tecnología y turnos online que generan confianza antes de la primera consulta.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/demo-inmobiliaria-/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Inmobiliaria">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/inmobiliaria.jpg"
-                   alt="Living moderno con ventanal de piso a techo y vista a la ciudad — demo inmobiliaria Luma Raíces" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Inmobiliaria</span>
-              </div>
-              <h3>Inmobiliaria · Luma Raíces</h3>
-              <p>Buscador de propiedades con filtros por operación, tipo y zona: la vidriera digital ideal para captar y calificar leads.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/demo-veterinaria-/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Veterinaria">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/veterinaria.jpg"
-                   alt="Veterinaria atendiendo a un golden retriever en consulta — demo VitaVet" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Veterinaria</span>
-              </div>
-              <h3>Veterinaria · VitaVet</h3>
-              <p>Sitio para clínicas veterinarias: servicios, urgencias y turnos online que transmiten cercanía y profesionalismo.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/demo-iphone/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Tienda de iPhones">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/iphone-landing.jpg"
-                   alt="iPhone y tablet en mockup sobre fondo azul oscuro — demo Tienda de iPhones" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Tecnología · Retail</span>
-              </div>
-              <h3>Tienda de iPhones · Vigolo Store</h3>
-              <p>Landing de producto para venta de celulares: catálogo, plan canje y contacto directo por WhatsApp para cerrar ventas rápido.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/excrusiones-turismo-aventura/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Turismo Aventura">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/excursiones-turismo.jpg"
-                   alt="Grupo de excursionistas caminando sobre un glaciar en la Patagonia — demo Andes Outdoor" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Turismo aventura</span>
-              </div>
-              <h3>Excursiones · Andes Outdoor</h3>
-              <p>Web para operadores de turismo aventura: excursiones, reservas online y sitio multilenguaje para captar viajeros locales y extranjeros.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/caba-as-hosteria/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Cabañas y Hostería">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="img/hosteria.jpg"
-                   alt="Cabaña de madera de noche con montañas nevadas de fondo — demo Cabañas Los Coihues" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Alojamiento turístico</span>
-              </div>
-              <h3>Hostería · Cabañas Los Coihues</h3>
-              <p>Sitio para alojamientos turísticos: disponibilidad, reserva online y presentación visual que enamora antes de llegar al destino.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/gym/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Gimnasio / Fitness">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
-                   alt="Vista de la demo de gimnasio PulseFit" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Fitness</span>
-              </div>
-              <h3>Gimnasio · PulseFit</h3>
-              <p>Plataforma fitness con planes, reservas online, testimonios, galería y QR de acceso.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/barberia/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Barbería">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
-                   alt="Vista de la demo de barbería Roble & Navaja" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Barbería</span>
-              </div>
-              <h3>Barbería · Roble &amp; Navaja</h3>
-              <p>Demo premium negro y dorado: turnos online, servicios, equipo, galería y reseñas.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-          <a class="project-card" href="https://vigolomarketing-tech.github.io/vigolo-web-demos-/estetica/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo Estética / Salón">
-            <div class="project-card__media">
-              <img loading="lazy" onerror="this.style.display='none'"
-                   src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=800&q=80"
-                   alt="Vista de la demo de estética Lumière" />
-              <span class="project-card__frame" aria-hidden="true"></span>
-              <span class="project-card__live project-card__live--demo">Demo</span>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__badges">
-                <span class="badge">Demo</span>
-                <span class="badge">Estética</span>
-              </div>
-              <h3>Estética · Lumière</h3>
-              <p>Demo elegante y luminosa: tratamientos, reserva de turnos, experiencia y galería.</p>
-              <span class="project-card__link">Ver demo →</span>
-            </div>
-          </a>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ SERVICIOS -->
-    <section id="servicios" class="section section--alt" aria-labelledby="servicios-title">
-      <div class="container">
-        <div class="section__head fade-up">
-          <p class="eyebrow">Servicios</p>
-          <h2 id="servicios-title">Lo que podés pedirme</h2>
-          <p>Cada proyecto se presupuesta según el alcance, la estructura y el nivel de desarrollo. Sin costos ocultos ni sorpresas.</p>
-        </div>
-
-        <div class="services-grid">
-
-          <article class="service-card fade-up">
-            <div class="service-card__icon" aria-hidden="true">01</div>
-            <h3>Web institucional</h3>
-            <p>Para negocios que necesitan presentar su marca, servicios, ubicación y canales de contacto de forma profesional.</p>
-            <ul class="service-card__list">
-              <li>Hasta 6 secciones personalizadas</li>
-              <li>Diseño a medida de tu rubro</li>
-              <li>Formulario o WhatsApp integrado</li>
-            </ul>
-          </article>
-
-          <article class="service-card fade-up">
-            <div class="service-card__icon" aria-hidden="true">02</div>
-            <h3>Landing page</h3>
-            <p>Página enfocada en comunicar una oferta, servicio o campaña de forma clara, directa y visual.</p>
-            <ul class="service-card__list">
-              <li>100% orientada a conversión</li>
-              <li>CTA directo a WhatsApp</li>
-              <li>Carga ultra rápida</li>
-            </ul>
-          </article>
-
-          <article class="service-card fade-up">
-            <div class="service-card__icon" aria-hidden="true">03</div>
-            <h3>Catálogo online</h3>
-            <p>Ideal para mostrar productos, categorías, imágenes, detalles y consultas de manera ordenada.</p>
-            <ul class="service-card__list">
-              <li>Filtros y categorías</li>
-              <li>Fichas de producto con detalle</li>
-              <li>Consulta directa por WhatsApp</li>
-            </ul>
-          </article>
-
-          <article class="service-card fade-up">
-            <div class="service-card__icon" aria-hidden="true">04</div>
-            <h3>Web para servicios</h3>
-            <p>Para profesionales, técnicos, oficios y empresas que necesitan transmitir confianza y recibir consultas.</p>
-            <ul class="service-card__list">
-              <li>Sección de servicios detallada</li>
-              <li>Sobre vos / tu empresa</li>
-              <li>Testimonios y contacto</li>
-            </ul>
-          </article>
-
-        </div>
-
-        <p class="services-note">
-          ¿No encontrás lo que buscás?
-          <a
-            href="https://wa.me/541128074105?text=Hola%2C%20tengo%20una%20idea%20para%20mi%20web.%20%C2%BFPodemos%20hablar%3F"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Hablemos por WhatsApp</a>
-          y lo analizamos juntos.
-        </p>
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════════════════ POR QUÉ ELEGIRNOS -->
-    <section class="section" aria-labelledby="enfoque-title">
-      <div class="container">
-        <div class="split-clean fade-up">
-          <div class="split-clean__left">
-            <p class="eyebrow">Por qué elegirnos</p>
-            <h2 id="enfoque-title">No es solo diseño. Es estructura para generar confianza y ventas.</h2>
-            <a
-              class="btn btn--primary btn--wa"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
+              class="btn btn--primary"
+              href="https://wa.me/5491128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
               target="_blank"
               rel="noopener noreferrer"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Hablar con Santiago
+              Escribime por WhatsApp
             </a>
+            <a class="btn btn--secondary" href="#trabajos">Ver trabajos</a>
           </div>
 
-          <div class="split-clean__right">
-            <div class="value-list">
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <strong>Código limpio, sin builders</strong>
-                  <p>Sin Wix, sin WordPress pesado. HTML, CSS y JS desde cero. Carga en segundos.</p>
-                </div>
-              </div>
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <strong>Orientado a conversión</strong>
-                  <p>Estructura pensada para que el visitante entienda rápido qué ofrecés y te escriba.</p>
-                </div>
-              </div>
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <strong>Diseño único, no plantillas</strong>
-                  <p>Cada proyecto se desarrolla desde cero para tu rubro y tu identidad de marca.</p>
-                </div>
-              </div>
-              <div class="value-item">
-                <div class="value-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <div>
-                  <strong>Soporte post-publicación</strong>
-                  <p>No desaparecemos al publicar. Ajustes y cambios disponibles después del lanzamiento.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <dl class="hero__stats">
+            <div><dt>Clientes en línea</dt><dd id="stat-clientes">—</dd></div>
+            <div><dt>Rubros</dt><dd id="stat-rubros">—</dd></div>
+            <div><dt>Primera respuesta</dt><dd>&lt; 24 h</dd></div>
+          </dl>
         </div>
+
+        <!-- Celular con un cliente real (el primer destacado de proyectos.js) -->
+        <a class="phone fade-up" id="hero-phone" href="https://pichonapanaderia.com" target="_blank" rel="noopener noreferrer" aria-label="Ver web de Pichona Panadería">
+          <span class="phone__notch" aria-hidden="true"></span>
+          <span class="phone__screen">
+            <img id="hero-phone-img" src="img/pichona.webp" alt="Pichona Panadería" width="800" height="533" />
+            <span class="phone__caption">
+              <span class="live">En línea</span>
+              <strong id="hero-phone-name">Pichona Panadería</strong>
+              <small id="hero-phone-domain">pichonapanaderia.com</small>
+            </span>
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FRANJA DE CLIENTES -->
+    <section class="clients-strip" aria-label="Clientes">
+      <div class="container">
+        <p class="clients-strip__label">Confiaron en nosotros</p>
+        <ul class="clients-strip__list" id="clients-strip"></ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ TRABAJOS -->
+    <section id="trabajos" class="section" aria-labelledby="clientes-title">
+      <div class="container">
+        <div class="section__head fade-up">
+          <p class="eyebrow">Clientes</p>
+          <h2 id="clientes-title">Webs reales, funcionando hoy</h2>
+          <p>Comercios y servicios que ya venden y reciben consultas con su web.</p>
+        </div>
+
+        <!-- Las cards salen de proyectos.js -->
+        <div class="grid grid--featured" id="clientes-destacados"></div>
+        <div class="grid" id="clientes-grid"></div>
+      </div>
+    </section>
+
+    <section id="demos" class="section section--alt" aria-labelledby="demos-title">
+      <div class="container">
+        <div class="section__head fade-up">
+          <p class="eyebrow">Demos por rubro</p>
+          <h2 id="demos-title">Modelos listos para adaptar a tu negocio</h2>
+          <p>Elegí tu rubro, mirá cómo quedaría y la adaptamos con tu marca, tus fotos y tus precios.</p>
+        </div>
+
+        <div class="chips" id="demos-chips" role="group" aria-label="Filtrar demos por rubro"></div>
+        <div class="grid" id="demos-grid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ SERVICIOS -->
+    <section id="servicios" class="section" aria-labelledby="servicios-title">
+      <div class="container">
+        <div class="section__head fade-up">
+          <p class="eyebrow">Servicios</p>
+          <h2 id="servicios-title">Lo que podés pedirme</h2>
+          <p>Cada web se arma para tu rubro. Sin plantillas genéricas ni costos ocultos.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card fade-up">
+            <span class="service-card__n">01</span>
+            <h3>Menú y pedidos por WhatsApp</h3>
+            <p>Para gastronomía, panaderías y heladerías: el cliente arma el pedido y te llega listo por WhatsApp.</p>
+          </article>
+          <article class="service-card fade-up">
+            <span class="service-card__n">02</span>
+            <h3>Catálogo online</h3>
+            <p>Productos con fotos, precios y categorías, ordenados para que el cliente encuentre lo que busca y consulte.</p>
+          </article>
+          <article class="service-card fade-up">
+            <span class="service-card__n">03</span>
+            <h3>Web para servicios y oficios</h3>
+            <p>Para técnicos, herreros, electricistas y profesionales: trabajos, zona de cobertura y contacto directo.</p>
+          </article>
+          <article class="service-card fade-up">
+            <span class="service-card__n">04</span>
+            <h3>Panel para el dueño</h3>
+            <p>Cambiá precios, fotos y productos desde el celular, sin depender de nadie y sin tocar código.</p>
+          </article>
+        </div>
+
+        <p class="services-note">
+          ¿No encontrás lo que buscás?
+          <a href="https://wa.me/5491128074105?text=Hola%2C%20tengo%20una%20idea%20para%20mi%20web.%20%C2%BFPodemos%20hablar%3F" target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp</a>
+          y lo vemos juntos.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ PRECIOS -->
+    <section id="precios" class="section section--alt" aria-labelledby="precios-title">
+      <div class="container">
+        <div class="section__head fade-up">
+          <p class="eyebrow">Precios</p>
+          <h2 id="precios-title">Precios claros, pago único</h2>
+          <p>Sin abonos mensuales obligatorios. El precio final depende de lo que necesite tu negocio.</p>
+        </div>
+
+        <!-- Los planes salen del objeto PRECIOS en proyectos.js -->
+        <div class="pricing" id="precios-grid"></div>
+        <p class="pricing__note" id="precios-nota"></p>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════ PROCESO -->
-    <section id="proceso" class="section section--alt" aria-labelledby="proceso-title">
+    <section id="proceso" class="section" aria-labelledby="proceso-title">
       <div class="container">
         <div class="section__head fade-up">
           <p class="eyebrow">Proceso</p>
           <h2 id="proceso-title">Cómo trabajamos juntos</h2>
-          <p>Un proceso claro y ordenado para que veas avance desde el primer día hasta la publicación.</p>
+          <p>Ves avances desde el primer día hasta la publicación.</p>
         </div>
 
-        <div class="steps">
-
-          <div class="step fade-up">
-            <div class="step__n" aria-hidden="true">1</div>
-            <h3>Diagnóstico</h3>
-            <p>Analizamos tu negocio, objetivos y servicios. Sin preguntas innecesarias: directo al punto.</p>
-          </div>
-
-          <div class="step fade-up">
-            <div class="step__n" aria-hidden="true">2</div>
+        <ol class="steps">
+          <li class="step fade-up">
+            <span class="step__n">1</span>
+            <h3>Charla</h3>
+            <p>Me contás qué vendés, cómo te piden hoy y qué querés mejorar. Directo al punto.</p>
+          </li>
+          <li class="step fade-up">
+            <span class="step__n">2</span>
             <h3>Propuesta</h3>
-            <p>Definimos secciones, estilo visual y alcance. Presupuesto claro antes de empezar.</p>
-          </div>
-
-          <div class="step fade-up">
-            <div class="step__n" aria-hidden="true">3</div>
+            <p>Definimos secciones, estilo y precio cerrado antes de empezar.</p>
+          </li>
+          <li class="step fade-up">
+            <span class="step__n">3</span>
             <h3>Diseño y desarrollo</h3>
-            <p>Construimos la web con diseño moderno, responsive y código limpio. Revisiones incluidas.</p>
-          </div>
-
-          <div class="step fade-up">
-            <div class="step__n" aria-hidden="true">4</div>
+            <p>Armo la web con tus fotos y precios. Revisiones incluidas.</p>
+          </li>
+          <li class="step fade-up">
+            <span class="step__n">4</span>
             <h3>Publicación</h3>
-            <p>Ajustes finales, dominio, hosting y publicación. Tu web lista para generar clientes.</p>
-          </div>
-
-        </div>
+            <p>Dominio, publicación y te explico cómo usarla. Después sigo disponible para ajustes.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -753,110 +296,58 @@
     </section>
     -->
 
-    <!-- ═══════════════════════════════════════════ FAQ -->
-    <section id="faq" class="section" aria-labelledby="faq-title">
-      <div class="container">
+    <!-- ═══════════════════════════════════════════ PREGUNTAS -->
+    <section id="preguntas" class="section section--alt" aria-labelledby="preguntas-title">
+      <div class="container container--narrow">
         <div class="section__head fade-up">
-          <p class="eyebrow">FAQ</p>
-          <h2 id="faq-title">Preguntas frecuentes</h2>
-          <p>Todo lo que necesitás saber antes de empezar tu proyecto.</p>
+          <p class="eyebrow">Preguntas</p>
+          <h2 id="preguntas-title">Preguntas frecuentes</h2>
         </div>
 
-        <div class="faq" role="list">
-
-          <details role="listitem">
-            <summary>
-              ¿Cuánto cuesta una página web?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Depende del tipo de proyecto, la cantidad de secciones y las funcionalidades necesarias. Una landing page tiene un costo diferente a un catálogo online. Analizamos lo que necesitás y te enviamos un presupuesto claro sin sorpresas.</p>
+        <div class="faq">
+          <details>
+            <summary>¿Cuánto cuesta una página web?</summary>
+            <p>Los precios arrancan en los valores de la sección <a href="#precios">Precios</a>, en un solo pago. Si tu proyecto necesita algo más, te paso un presupuesto cerrado antes de empezar.</p>
           </details>
-
-          <details role="listitem">
-            <summary>
-              ¿Cuánto tiempo tarda el desarrollo?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Una landing page puede estar lista en pocos días. Una web institucional completa puede llevar 1 a 2 semanas. Depende principalmente del contenido que nos enviés y las revisiones que requiera el proyecto.</p>
+          <details>
+            <summary>¿Cuánto tiempo tarda?</summary>
+            <p>Una web simple puede estar lista en pocos días; una con catálogo o panel, en una a tres semanas. Depende sobre todo de que tengamos las fotos y los precios.</p>
           </details>
-
-          <details role="listitem">
-            <summary>
-              ¿Necesito dominio y hosting?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Sí, para publicar en un dominio propio necesitás dominio y hosting. Si ya tenés, lo integramos sin problema. Si no tenés, te asesoramos con las mejores opciones según tu presupuesto.</p>
+          <details>
+            <summary>¿Necesito dominio y hosting?</summary>
+            <p>El dominio del primer año está incluido y la publicación también. Si ya tenés dominio, lo usamos sin problema.</p>
           </details>
-
-          <details role="listitem">
-            <summary>
-              ¿La web funciona bien en celular?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Sí, siempre. Todas las webs que desarrollamos son 100% responsive: se ven perfectas en celular, tablet y computadora. Más del 70% de los clientes buscan negocios desde el celular, por eso es prioridad.</p>
+          <details>
+            <summary>¿Se ve bien en el celular?</summary>
+            <p>Sí, siempre. La mayoría de tus clientes va a entrar desde Instagram en el celular, así que la web se diseña primero para ahí.</p>
           </details>
-
-          <details role="listitem">
-            <summary>
-              ¿Qué necesito para empezar?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Solo necesitás contarnos sobre tu negocio: rubro, servicios, logo si tenés, fotos, redes sociales y datos de contacto. Nosotros nos encargamos del diseño, estructura y desarrollo.</p>
+          <details>
+            <summary>¿Qué necesito para empezar?</summary>
+            <p>Contarme de tu negocio y pasarme logo, fotos, precios y datos de contacto. Si te falta algo, lo resolvemos juntos.</p>
           </details>
-
-          <details role="listitem">
-            <summary>
-              ¿Puedo hacer cambios después de publicada?
-              <span class="faq__icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-              </span>
-            </summary>
-            <p>Sí. Ofrecemos soporte post-publicación para ajustes de texto, imágenes o secciones. No desaparecemos al terminar — te acompañamos incluso después del lanzamiento.</p>
+          <details>
+            <summary>¿Puedo hacer cambios después?</summary>
+            <p>Sí. Con el plan con panel cambiás precios y productos vos mismo; y para cualquier otro ajuste me escribís.</p>
           </details>
-
         </div>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════════════ CONTACTO -->
-    <section id="contacto" class="section contact" aria-labelledby="contacto-title">
+    <section id="contacto" class="section" aria-labelledby="contacto-title">
       <div class="container">
-        <div class="contact__card fade-up">
-          <p class="eyebrow">Contacto</p>
-          <h2 id="contacto-title">¿Listo para tener una web que trabaje por vos?</h2>
-          <p>Contame a qué te dedicás y qué necesitás. Te respondo en menos de 24 horas con una propuesta clara y sin compromiso.</p>
-
+        <div class="contact fade-up">
+          <h2 id="contacto-title">¿Arrancamos con la web de tu negocio?</h2>
+          <p>Contame a qué te dedicás y qué necesitás. Te respondo en menos de 24 horas, sin compromiso.</p>
           <div class="contact__actions">
             <a
-              class="btn btn--primary btn--wa btn--lg"
-              href="https://wa.me/541128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20profesional%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
+              class="btn btn--primary btn--lg"
+              href="https://wa.me/5491128074105?text=Hola%2C%20quiero%20cotizar%20una%20p%C3%A1gina%20web%20para%20mi%20negocio.%20%C2%BFMe%20pas%C3%A1s%20info%3F"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Escribir por WhatsApp"
-            >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Escribir por WhatsApp
-            </a>
-
-            <a class="btn btn--secondary" href="mailto:vigolomarketing@gmail.com">
-              vigolomarketing@gmail.com
-            </a>
+            >Escribime por WhatsApp</a>
+            <a class="btn btn--secondary" href="mailto:vigolomarketing@gmail.com">vigolomarketing@gmail.com</a>
           </div>
-
-          <p class="contact__note">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            Respondemos en menos de 24 h · Sin compromiso · Presupuesto gratis
-          </p>
         </div>
       </div>
     </section>
@@ -864,86 +355,29 @@
   </main>
 
   <!-- ═══════════════════════════════════════════ FOOTER -->
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="logo" aria-label="Vigolo Web Studio">
-          <span class="logo__mark" aria-hidden="true">V</span>
-          <div>
-            <strong>Vigolo</strong>
-            <small>Web Studio</small>
-          </div>
+      <div>
+        <a href="#" class="logo" aria-label="Vigolo Web Studio — Inicio">
+          <svg class="logo__svg" viewBox="0 0 124 40" aria-hidden="true">
+            <text class="logo__word" x="0" y="25">vigolo<tspan class="logo__dot">.</tspan></text>
+            <text class="logo__sub" x="1" y="37">web studio</text>
+          </svg>
         </a>
-        <p class="footer__tagline">Diseño web profesional para negocios que quieren crecer online.</p>
+        <p class="footer__tagline">Webs para comercios de zona sur.</p>
       </div>
-
-      <div class="footer__right">
-        <nav class="footer__nav" aria-label="Navegación de pie de página">
-          <a href="#portfolio">Portfolio</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#proceso">Proceso</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
-        <span class="footer__copy muted">© <span id="year"></span> Vigolo Web Studio · vigolowebstudio.com</span>
-      </div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="#trabajos">Trabajos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Vigolo Web Studio · vigolowebstudio.com</p>
     </div>
   </footer>
 
-  <script>
-    // ── Año en footer ────────────────────────────────────────────────
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // ── Hamburger menu ────────────────────────────────────────────────
-    const toggle = document.querySelector('.nav__toggle');
-    const menu   = document.querySelector('.nav__menu');
-
-    function closeMenu() {
-      menu.classList.remove('nav__menu--open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.classList.remove('nav__toggle--open');
-      document.body.classList.remove('no-scroll');
-    }
-
-    if (toggle && menu) {
-      toggle.addEventListener('click', function () {
-        const isOpen = menu.classList.toggle('nav__menu--open');
-        this.setAttribute('aria-expanded', isOpen);
-        this.classList.toggle('nav__toggle--open', isOpen);
-        document.body.classList.toggle('no-scroll', isOpen);
-      });
-
-      // Cerrar al hacer click en cualquier link del menú
-      menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-
-      // Cerrar si el viewport supera el breakpoint mobile
-      window.addEventListener('resize', () => {
-        if (window.innerWidth > 860) closeMenu();
-      });
-    }
-
-    // ── Scroll reveal ─────────────────────────────────────────────────
-    const revealObserver = new IntersectionObserver(
-      entries => entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          revealObserver.unobserve(e.target);
-        }
-      }),
-      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-    );
-    document.querySelectorAll('.fade-up').forEach(el => revealObserver.observe(el));
-
-    // ── Stagger delay en grids de cards ──────────────────────────────
-    // Aplica delay escalonado a cards dentro de grids para entrada más premium
-    document.querySelectorAll('.portfolio-grid, .services-grid, .steps, .benefits-grid').forEach(grid => {
-      grid.querySelectorAll('.project-card, .service-card, .step, .benefit-item').forEach((card, i) => {
-        card.style.transitionDelay = (i * 60) + 'ms';
-      });
-    });
-
-    // ── FAQ: el chevron gira via CSS [open] — no requiere JS adicional ──
-  </script>
-
+  <script src="proyectos.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
