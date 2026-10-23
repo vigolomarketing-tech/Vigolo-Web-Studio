@@ -19,7 +19,7 @@ const PROYECTOS = [
     tipo: "cliente",
     url: "https://pichonapanaderia.com",
     img: "img/pichona.webp",
-    descripcion: "Ahora cambia precios y fotos desde el celular, sin esperar a nadie, y la carta siempre está al día.",
+    descripcion: "Dejó el link de Canva por una web propia con dominio y un panel para actualizar precios ella misma.",
     destacado: true
   },
   {
@@ -27,8 +27,8 @@ const PROYECTOS = [
     rubro: "Gastronomía",
     tipo: "cliente",
     url: "https://tacosruth.com",
-    img: "img/placeholder.webp",
-    descripcion: "Pasó de tomar pedidos por teléfono a recibirlos armados por WhatsApp.",
+    img: "img/tacos-ruth.webp",
+    descripcion: "Menú online con carrito: el pedido llega armado al WhatsApp con dirección y forma de pago.",
     destacado: true
   },
   {
@@ -55,11 +55,11 @@ const PROYECTOS = [
     tipo: "cliente",
     url: "https://elizarddeco.com",
     img: "img/elizard-deco.webp",
-    descripcion: "Sus trabajos dejaron de estar perdidos en Instagram: ahora los muestra ordenados antes de presupuestar.",
+    descripcion: "Pérgolas, cerramientos y portones con fotos reales y reseñas de Google que llevan la consulta a WhatsApp.",
     destacado: false
   },
   {
-    nombre: "Vigolo Electricidad",
+    nombre: "Electricidad",
     rubro: "Electricidad",
     tipo: "cliente",
     url: "https://vigolomarketing-tech.github.io/vigolo-electricidad/",
@@ -68,16 +68,25 @@ const PROYECTOS = [
     destacado: false
   },
   {
-    nombre: "Metales Sur",
-    rubro: "Metalúrgica",
+    nombre: "Herrajes Darío",
+    rubro: "Ferretería",
     tipo: "cliente",
-    url: "https://vigolomarketing-tech.github.io/Metales-sur/",
-    img: "img/metales-sur.webp",
-    descripcion: "Los paneles que antes explicaba foto por foto en el chat ahora están en un catálogo con consulta directa.",
+    url: "https://herrajesdario.com.ar",
+    img: "img/placeholder.webp",
+    descripcion: "Catálogo por categoría y marca para que carpinteros y fabricantes consulten precios sin llamar.",
     destacado: false
   },
 
   // ── DEMOS ────────────────────────────────────────────────
+  {
+    nombre: "Metales Sur",
+    rubro: "Metalúrgica",
+    tipo: "demo",
+    url: "https://vigolomarketing-tech.github.io/Metales-sur/",
+    img: "img/metales-sur.webp",
+    descripcion: "Para que los paneles a medida se vean en un catálogo y no haya que explicarlos foto por foto en el chat.",
+    destacado: false
+  },
   {
     nombre: "Lumina Dental Studio",
     rubro: "Salud",

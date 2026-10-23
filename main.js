@@ -8,14 +8,15 @@ const dominio = url => url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''
 
 const clientes = PROYECTOS.filter(p => p.tipo === 'cliente');
 const demos    = PROYECTOS.filter(p => p.tipo === 'demo');
+const PLACEHOLDER = 'img/placeholder.webp';
 
 function card(p, grande) {
   const esCliente = p.tipo === 'cliente';
   return `
     <a class="card fade-up${grande ? ' card--grande' : ''}" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" data-rubro="${esc(p.rubro)}">
-      <span class="card__media">
-        <img src="${esc(p.img)}" alt="${esc(p.nombre)}" loading="lazy" width="800" height="600" />
-      </span>
+      ${p.img === PLACEHOLDER
+        ? `<span class="card__media card__media--sin-foto" aria-hidden="true">${esc(p.nombre)}</span>`
+        : `<span class="card__media"><img src="${esc(p.img)}" alt="${esc(p.nombre)}" loading="lazy" width="800" height="500" /></span>`}
       <span class="card__body">
         <span class="card__top">
           <span class="badge">${esc(p.rubro)}</span>
@@ -39,10 +40,10 @@ document.getElementById('clients-strip').innerHTML =
 
 // ── Estadísticas del hero ──────────────────────────────────
 document.getElementById('stat-clientes').textContent = clientes.length;
-document.getElementById('stat-rubros').textContent = new Set(PROYECTOS.map(p => p.rubro)).size;
+document.getElementById('stat-demos').textContent = demos.length;
 
 // ── Celular del hero: primer cliente destacado ─────────────
-const heroCliente = clientes.find(p => p.destacado);
+const heroCliente = clientes.find(p => p.destacado && p.img !== PLACEHOLDER);
 if (heroCliente) {
   const phone = document.getElementById('hero-phone');
   phone.href = heroCliente.url;
